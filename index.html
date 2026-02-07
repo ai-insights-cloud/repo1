@@ -1,19 +1,2196 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Repo Skeleton</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Demo Сайт</title>
+    <meta name="keywords" content="мультиссылка в инстаграм, мультилендинг, одностраничный сайт визитка, landing page лендинг пейдж бесплатно,">
+    <meta name="description" content="MurrMeLand - Самый простой и лёгкий способ создать мультиссылку в инстаграм, мультилендинг, одностраничный сайт визитку, landing page (лендинг пейдж) бесплатно. Без программистов, хостинга, домена и прочего. 15 готовых экранов - всё необходимое и достаточное. Всё для приёма заявок: несколько форм захвата контактов, мессенджеры. Внешние ссылки на соцсети, сайты, скачивание файла. Контакты с активной картой. Великолепное отображение на всех дисплеях. ">
+    <!-- Facebook metadata -->
+    <meta property="og:url" content="https://pinkpeony.murrmeland.com/">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/plugins/fsFields/uploads/1/images/celebration-3443779.jpg">    <meta property="og:title" content="Demo Сайт">
+    <meta property="og:description" content="MurrMeLand - Самый простой и лёгкий способ создать мультиссылку в инстаграм, мультилендинг, одностраничный сайт визитку, landing page (лендинг пейдж) бесплатно. Без программистов, хостинга, домена и прочего. 15 готовых экранов - всё необходимое и достаточное. Всё для приёма заявок: несколько форм захвата контактов, мессенджеры. Внешние ссылки на соцсети, сайты, скачивание файла. Контакты с активной картой. Великолепное отображение на всех дисплеях. ">
+    <meta property="og:locale" content="ru_RU" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#72c02c">
+    <meta name="msapplication-TileColor" content="#72c02c">
+    <meta name="theme-color" content="#1A1A1A">
+    <!-- Style -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/offcanvas.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="/assets/fonts/stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="/assets/fonts/et-line-font.css">
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <!-- <link rel="stylesheet" href="/assets/vendor/animate.css"> -->
+    <link rel="stylesheet" href="/assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/assets/vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/assets/vendor/custombox/custombox.min.css">
+    <link rel="stylesheet" href="/assets/css/landings/unify-core.css">
+    <link rel="stylesheet" href="/assets/css/landings/unify-components.css">
+    <link rel="stylesheet" href="/assets/css/landings/unify-globals.css">
+    <link rel="stylesheet" href="/assets/css/landings/PinkPeony.css">
+    <link rel="stylesheet" href="/assets/css/landings/custom.css">
+    <!--
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+    -->
+        <style>
+                .g-color-primary { color: #ff0045 !important; }
+        .g-bg-primary { background-color: #ff0045 !important; }
+        .btn-primary, .u-btn-primary { color: #ffffff; background-color: #ff0045; }
+        .g-bg-primary--hover:hover, .u-btn-primary:hover, .u-btn-primary.active { color: #ff0045; border-color: #ffffff; background-color: #ff0045; }
+        .g-brd-primary { border-color: #ff0045 !important; }
+        .g-bg-primary-dark-v2 { background-color: #ff0045 !important; }
+        a { color: #ff0045; }
+        .g-border-primary--focus:focus { border-color: #cd0013; }
+        .g-bg-primary-opacity-0_1 { background-color: rgba(255, 0, 69, 0.1) !important; } .g-bg-primary-opacity-0_2 { background-color: rgba(255, 0, 69, 0.2) !important; } .g-bg-primary-opacity-0_3 { background-color: rgba(255, 0, 69, 0.3) !important; } .g-bg-primary-opacity-0_4 { background-color: rgba(255, 0, 69, 0.4) !important; } .g-bg-primary-opacity-0_5 { background-color: rgba(255, 0, 69, 0.5) !important; } .g-bg-primary-opacity-0_6 { background-color: rgba(255, 0, 69, 0.6) !important; } .g-bg-primary-opacity-0_7 { background-color: rgba(255, 0, 69, 0.7) !important; } .g-bg-primary-opacity-0_8 { background-color: rgba(255, 0, 69, 0.8) !important; } .g-bg-primary-opacity-0_9 { background-color: rgba(255, 0, 69, 0.9) !important; }     </style>
 </head>
-
-<body>
-    <div id="app">
-        <h1>Привет, мир!</h1>
-        <p>Проект успешно заскелетирован.</p>
+<body><main><!-- Offer / Logo -->
+<section id="offer" class="offer-image g-bg-img-hero g-pos-rel u-bg-overlay g-bg-black-opacity-0_8--after g-pt-50" style="background-image: url(/plugins/fsFields/uploads/1/images/001.jpg);">
+    <div class="container g-max-width-800 u-bg-overlay__inner g-color-white g-mb-0">
+        <div class="container align-self-center text-center g-width-800 g-pt-80">
+            <div class="text-center align-self-center u-heading-v7-3 g-mb-30">
+                <h1 class="offer-title u-heading-v7__title g-color-white g-font-size-50 g-font-goodvibes g-mb-20">
+                    Давай путешествовать вместе!                 </h1>
+                <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                    <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+                    <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                    <i class="fa fa-heart g-font-size-default g-color-primary"></i>
+                    <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                    <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+                </div>
+            </div>
+            <p class="h4 g-color-white mb-0 offer-description">
+                Сколько ещё чудесных мест в мире ждут тебя!
+<br />Присоединяйся к нашей дружной компании, - вместе нам будет веселее! Каждую неделю новые города и страны!
+<br />Не откладывай жизнь на потом.
+<br />
+<br />Отправь свои данные сейчас, - мы свяжемся с тобой!             </p>
+        </div>
     </div>
-    <script type="module" src="/src/main.js"></script>
-</body>
+        <div class="container u-bg-overlay__inner g-bottom-minus-70 px-0 g-mb-100">
+        <div class="row u-shadow-v23 u-angle-v1--top-right--bg-light g-bg-primary mx-0 g-rounded-15">
+            <div class="col-md-12 d-flex g-height-auto g-theme-color-gray-dark-v1 g-px-50 g-py-80 g-py-50--md g-py-50--lg">
+                <div class="align-self-center w-100">
+                    <div class="align-self-center w-100 g-mb-20">
+                        <h3 class="contacts-form-title g-font-weight-500 g-font-size-20 g-color-white g-mb-20">
+                            Путешествуй с нами!                        </h3>
+                    </div>
+                    <form class="form-contact" data-event-success="Lead" data-event-data='{"form":"offer"}' action="https://pinkpeony.murrmeland.com/EmailForm/Send/" >
+                        <input type="hidden" value="" name="redirect" />
+                        <div class="row g-mb-10 d-flex">
+                                                            <div class="flex-fill g-pr-20">
+                                    <label class="form-group g-pos-rel g-mx-15 w-100">
+                                        <input required class="form-control u-shadow-v26 g-bg-transparent g-border-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-25 g-pr-40 g-py-13" name="name" placeholder="Ваше Имя">
+                                        <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-16 h-100 g-flex-centered g-color-white">
+                                            <i class="icon-user"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            
+                                                            <div class="flex-fill g-pr-20">
+                                    <label class="form-group g-pos-rel g-mx-15 w-100">
+                                        <input required class="form-control u-shadow-v26 g-bg-transparent g-border-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-25 g-pr-40 g-py-13" type="email" name="email" placeholder="E-mail" data-mask="E">
+                                        <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-white">
+                                            <i class="icon-envelope"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                                                                        <div class="flex-fill g-pr-20">
+                                    <label class="form-group g-pos-rel g-mx-15 w-100">
+                                        <input required class="form-control g-pos-rel w-100 u-shadow-v26 g-bg-transparent g-border-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-55 g-pr-40 g-py-13 phone-number" type="tel" name="phone" placeholder="Телефон">
+                                        <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-white">
+                                            <i class="icon-phone"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                                    </div>
+                        <div class="confiden-wrap g-ml-10 g-mb-15 g-font-size-13">
+                            <i class="fas fa-check-square fa-lg g-color-white-opacity-0_7">
+                            </i>
+                            &nbsp;
+                            <a href="#modal-confiden" class="confiden g-color-white-opacity-0_7 g-color-white--hover u-link-v5" data-modal-target="#modal-confiden" data-modal-effect="blur">&nbsp;Даю согласие на обработку данных</a>
+                        </div>
+                        <button class="js-fancybox-media btn btn-xl g-color-white-opacity-0_9 text-uppercase u-btn-primary g-parent g-btn-hover-reset g-pos-rel g-font-weight-700 g-font-size-11 g-brd-none g-rounded-10 g-pa-20 g-pl-75" type="submit" data-animate-in="flipInY" data-animate-out="flipOutY" data-speed="1000">
+										<span class="g-pos-abs g-top-0 g-left-0 g-flex-centered g-width-60 g-width-70--parent-hover h-100 g-bg-primary-dark-v2 g-rounded-10 g-transition-0_2 g-transition--ease-in">
+											<i class="icon-envelope g-font-size-26 g-color-white-opacity-0_6">
+											</i>
+										</span>
+                            <span class="contacts-btn-text">Уже хочу!</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+<!-- End Offer / Logo --><!-- About -->
+<section id="about" class="u-shadow-v2">
+    <div class="g-pb-30 g-pt-70">
+        <div class="container text-center g-width-1025 g-mb-15">
+            <div class="u-heading-v7-3 g-mb-30">
+                <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+                    Кто мы                </h2>
+                <div class="u-heading-v7-divider g-color-primary g-brd-gray-light-v4">
+                    <i class="fa fa-heart g-font-size-8">
+                    </i>
+                    <i class="fa fa-heart g-font-size-11">
+                    </i>
+                    <i class="fa fa-heart g-font-size-default">
+                    </i>
+                    <i class="fa fa-heart g-font-size-11">
+                    </i>
+                    <i class="fa fa-heart g-font-size-8">
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="container g-width-945 mx-auto">
+            <!-- Block -->
+            <div class="row ">
+                <div class="col-sm-12">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <div class="d-inline-block g-width-200 g-height-200 g-mb-20 u-shadow-v26 rounded-circle g-bg-img-hero" style="background-image: url(/plugins/fsFields/uploads/1/images/celebration-3443779.jpg);" alt="MurrMeLand - Самый простой и лёгкий способ создать мультиссылку в инстаграм, мультилендинг, одностраничный сайт визитку, landing page (лендинг пейдж) бесплатно. Без программистов, хостинга, домена и прочего. 15 готовых экранов - всё необходимое и достаточное. Всё для приёма заявок: несколько форм захвата контактов, мессенджеры. Внешние ссылки на соцсети, сайты, скачивание файла. Контакты с активной картой. Великолепное отображение на всех дисплеях. ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                    <!-- Article -->
+                    <article class="text-left">
+                        <!-- Article Image -->
+                        <!-- End Article Image -->
+                        <!-- Article Body -->
+                        <p class="g-mb-40 text-left">
+                            Прежде всего, мы разные люди, увлеченные общением, путешествиями, новыми впечатлениями! У нас разные профессии, национальности, но объединяет нас нечто ценное – любовь к Жизни! Каждый из нас, как и ты – трудится, творит и созидает. Кто-то строит карьеру, кто-то владеет или управляет бизнесом, кто-то преподаёт, лечит, строит… 
+<br />Но несколько раз в году каждый из нас отправляется в неизведанные места. Нас манит и завораживает дух путешествий и новых знакомств. Нас много, поэтому мы способны организовывать туры в разные страны каждую неделю.
+<br />Присоединяйся! Скучно не будет, - обещаем!                        </p>
+                        <!-- End Article Body -->
+                    </article>
+                    <!-- End Article -->
+                </div>
+            </div>
+            <!-- End Block -->
+        </div>
+    </div>
+</section>
+<!-- End About --><!-- CTA-2 -->
+<div class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options="{
+	settings_mode_oneelement_max_offset: '150'
+	}">
+    <!-- Parallax Image -->
+    <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background-image: url(/plugins/fsFields/uploads/1/images/001.jpg);">
+    </div>
+    <section id="cta2" class="g-flex-centered g-height-550 g-color-white u-bg-overlay g-bg-primary-opacity-0_9 g-py-60">
+        <div class="container u-bg-overlay__inner">
+            <div class="justify-content-center">
+                <div class="u-heading-v7-3 text-center g-mb-15">
+                    <h2 class="u-heading-v7__title g-color-white g-font-size-50 g-font-goodvibes g-mt-15 g-mb-15">
+                        Не откладывай жизнь на завтра. Присоединяйся!                    </h2>
+                </div>
+                <div class="container g-width-945">
+                    <p class="h5 g-color-white text-center g-mb-25">
+                        Отправь свой номер телефона, - мы уведомим тебя о лучших турах с нами!                    </p>
+                </div>
+                <!-- Subscribe -->
+                <form data-event-success="Lead" data-event-data='{"form":"cta2"}' class="form-contact input-group" action="https://pinkpeony.murrmeland.com/EmailForm/Send/">
+                    <input type="hidden" value="" name="redirect" />
+                    <div class="container g-width-900 mx-auto">
+                        <div class="row">
+                            <div class="flex-fill g-pr-20">
+                                <label class="form-group g-pos-rel g-mx-15 w-100">
+                                    <input name="phone" required class="g-pl-55 phone-number form-control g-pos-rel w-100 u-shadow-v26 g-bg-transparent g-bg-transparent--focus g-brd-white-opacity-0_5 g-brd-white--focus g-placeholder-inherit g-color-white g-rounded-50 g-pr-40 g-py-13"
+                                           placeholder="Ваш Телефон"  type="text">
+                                    <div class="g-pos-abs g-top-0 g-right-10 g-width-40 h-100 g-flex-centered g-color-white">
+                                        <i class="icon-phone"></i>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-12 col-lg-2 text-md-center text-sm-center text-lg-left g-mb-15">
+                                <button class="btn u-btn-primary text-uppercase g-bg-transparent--focus g-brd-white-opacity-0_5 g-brd-white--focus g-rounded-30 g-px-25 g-py-13" type="submit">
+                                    Отправить                                </button>
+                            </div>
+                        </div>
+                        <div class="confiden-wrap g-ml-10 g-mb-15 g-font-size-13">
+                            <i class="fas fa-check-square fa-lg g-color-white-opacity-0_7">
+                            </i>
+                            &nbsp;
+                            <a href="#modal-confiden" class="confiden g-color-white-opacity-0_7 g-color-white--hover u-link-v5" data-modal-target="#modal-confiden" data-modal-effect="blur">&nbsp;Даю согласие на обработку данных</a>
+                        </div>
+                    </div>
+                </form>
+                <!-- / Subscribe -->
+            </div>
+        </div>
+    </section>
+</div>
+<!-- End CTA-2--><!-- Services custombox-lock -->
+<div class="dzsparallaxer  auto-init height-is-based-on-content custombox-blur use-loading" data-options="{
+	settings_mode_oneelement_max_offset: '150'
+	}">
+    <!-- Parallax Image custombox-container custombox-blur custombox-open -->
+    <div class="divimage dzsparallaxer--target w-100" style="height: 140%;background-image: url(/plugins/fsFields/uploads/1/images/001.jpg);">
+    </div>
+    <section id="services" class="g-flex-centered g-height-550 u-bg-overlay g-bg-black-opacity-0_8 g-pb-110 g-py-80">
+        <div class="container u-bg-overlay__inner">
+            <div class="text-center">
+                <div class="u-heading-v7-3 g-mb-30">
+                    <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-color-primary g-mt-15 g-mb-20">
+                        Не просто туры                    </h2>
+                    <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                        <i class="pe-7s-magic-wand g-font-size-18 g-color-primary">
+                        </i>
+                        <i class="pe-7s-magic-wand g-font-size-26 g-color-primary">
+                        </i>
+                        <i class="pe-7s-magic-wand g-font-size-36 g-color-primary">
+                        </i>
+                        <i class="pe-7s-magic-wand g-font-size-26 g-color-primary">
+                        </i>
+                        <i class="pe-7s-magic-wand g-font-size-18 g-color-primary">
+                        </i>
+                    </div>
+                </div>
+                <p class="h5 g-color-white g-mb-35">
+                    Мы создаём волшебные впечатления от путешествий на долгие годы, наполняя их фейерверками эмоций.
+<br />
+<br />С нами в команде стилисты и фотографы, мастера медитаций, организаторы весёлых вечеринок.
+<br />
+<br />Это будет незабываемое время. Гарантируем!                </p>
+                <div class="container u-bg-overlay__inner">
+                    <div class="js-carousel" data-infinite="true" data-arrows-classes="hidden-down u-arrow-v1 g-pos-abs g-absolute-centered--y--md g-top-100x g-top-50x--md g-width-50 g-height-50 g-rounded-50x g-font-size-12 g-color-white g-bg-white-opacity-0_4 g-bg-white-opacity-0_7--hover g-mb-30 g-mt-30 g-mt-0--md"
+                         data-arrow-left-classes="fa fa-chevron-left g-left-0" data-arrow-right-classes="fa fa-chevron-right g-right-0">
+                                                    <div class="js-slide">
+                                <!-- Testimonial Block -->
+                                <div class="text-center g-max-width-600 mx-auto">
+                                    <img class="img-fluid" src="/plugins/fsFields/uploads/1/images/murr_people-015.jpg" alt="Фотосессии">
+                                    <div class="g-bg-white g-pa-30-50-40--sm g-pa-20">
+                                        <h4 class="g-font-size-30 g-color-primary g-mb-20">
+                                            Фотосессии                                        </h4>
+                                        <blockquote class="g-font-size-default g-theme-color-gray-light-v1 g-mb-40">
+                                            Стилисты помогут тебе войти в яркий образ...                                        </blockquote>
+                                        <div class="text-center">
+                                            <a class="g-bg-transparent--focus g-brd-white--focus g-rounded-50x g-px-30 g-py-30" href="#modal-messengers" data-modal-target="#modal-messengers" data-modal-effect="blur">
+												<span class="u-icon-v3 u-shadow-v30 u-icon-size--lg g-width-70 g-height-70 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+												<i class="et-icon-chat">
+												</i>
+												</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Testimonial Block -->
+                            </div>
+                                                    <div class="js-slide">
+                                <!-- Testimonial Block -->
+                                <div class="text-center g-max-width-600 mx-auto">
+                                    <img class="img-fluid" src="/plugins/fsFields/uploads/1/images/murr_people-006.jpg" alt="Медитации">
+                                    <div class="g-bg-white g-pa-30-50-40--sm g-pa-20">
+                                        <h4 class="g-font-size-30 g-color-primary g-mb-20">
+                                            Медитации                                        </h4>
+                                        <blockquote class="g-font-size-default g-theme-color-gray-light-v1 g-mb-40">
+                                            Испытаешь невероятные духовные практики...                                        </blockquote>
+                                        <div class="text-center">
+                                            <a class="g-bg-transparent--focus g-brd-white--focus g-rounded-50x g-px-30 g-py-30" href="#modal-messengers" data-modal-target="#modal-messengers" data-modal-effect="blur">
+												<span class="u-icon-v3 u-shadow-v30 u-icon-size--lg g-width-70 g-height-70 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+												<i class="et-icon-chat">
+												</i>
+												</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Testimonial Block -->
+                            </div>
+                                                    <div class="js-slide">
+                                <!-- Testimonial Block -->
+                                <div class="text-center g-max-width-600 mx-auto">
+                                    <img class="img-fluid" src="/plugins/fsFields/uploads/1/images/murr_people-010.jpg" alt="Вечеринки">
+                                    <div class="g-bg-white g-pa-30-50-40--sm g-pa-20">
+                                        <h4 class="g-font-size-30 g-color-primary g-mb-20">
+                                            Вечеринки                                        </h4>
+                                        <blockquote class="g-font-size-default g-theme-color-gray-light-v1 g-mb-40">
+                                            Отдохнёшь в весёлой шумной кампании...                                        </blockquote>
+                                        <div class="text-center">
+                                            <a class="g-bg-transparent--focus g-brd-white--focus g-rounded-50x g-px-30 g-py-30" href="#modal-messengers" data-modal-target="#modal-messengers" data-modal-effect="blur">
+												<span class="u-icon-v3 u-shadow-v30 u-icon-size--lg g-width-70 g-height-70 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+												<i class="et-icon-chat">
+												</i>
+												</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Testimonial Block -->
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- End Services --><!-- Messengers -->
+<section id="messengers" class="u-bg-overlay u-shadow-v26  g-bg-img-hero g-bg-black-opacity-0_7--after g-py-50" style="background-image: url(/plugins/fsFields/uploads/1/images/messenger.jpg);">
+    <div class="container text-center u-bg-overlay__inner g-width-1025 g-pb-5">
+        <div class="u-heading-v7-3 g-mb-30">
+            <h2 class="u-heading-v7__title g-font-size-60 g-color-white-opacity-0_8 g-font-goodvibes g-mb-20">
+                Есть вопросы? Мы всегда на связи!            </h2>
+            <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-default g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+            </div>
+        </div>
+        <p class="h4 g-color-white">
+            Звони, пиши, радируй 24/7        </p>
+        <div class="g-mt-50">
+            <!-- Icon Blocks -->
+            <ul class="row no-gutters list-inline g-mb-30 u-shadow-v30">
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="https://t.me/telegram" target="_blank" class="bg-fa-telegram-plane d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="https://api.whatsapp.com/send?phone=+7 0001112233" target="_blank" class="bg-fa-whatsapp d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="viber://pa?chatURI=+70001112233" target="_blank" class="bg-fa-viber d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="http://vk.me/1" target="_blank" class="bg-fa-vk d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="http://m.me/01" target="_blank" class="bg-fa-facebook-messenger d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </a>
+                    </li>
+                            </ul>
+            <!-- End Icon Blocks -->
+        </div>
+    </div>
+</section>
+<!-- End Messengers --><section id="benefits" class="g-py-100">
+    <div class="container text-center g-width-1025 g-mb-30">
+        <div class="u-heading-v7-3 g-mb-30">
+            <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+                Стоит присмотреться к нам!            </h2>
+            <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                <i class="pe-7s-diamond g-font-size-18 g-color-primary">
+                </i>
+                <i class="pe-7s-diamond g-font-size-26 g-color-primary">
+                </i>
+                <i class="pe-7s-diamond g-font-size-36 g-color-primary">
+                </i>
+                <i class="pe-7s-diamond g-font-size-26 g-color-primary">
+                </i>
+                <i class="pe-7s-diamond g-font-size-18 g-color-primary">
+                </i>
+            </div>
+        </div>
+        <p class="h5 mb-0">
+            Просто потому, что мы лучшие в организации путешествий, туров, мероприятий и просто чудесного отдыха!        </p>
+    </div>
+    <div class="container g-width-1025 mx-auto">
+        <div class="row g-mb-50">
+                            <div class="col-lg-12 g-px-30 g-mb-30">
+                    <!-- Icon Blocks -->
+                    <div class="g-bg-primary g-pos-rel g-parent g-rounded-20 g-bg-pink-opacity-0_9 u-shadow-v26 g-bg-pink--hover g-py-35 g-px-25 g-pl-70--sm">
+                        <div class="g-hidden-xs-down g-absolute-centered--y g-left-0">
+                            <div class="g-pull-50x-left g-brd-around g-brd-5 g-brd-white g-rounded-50x g-overflow-hidden">
+									<span class="d-block g-pos-abs g-top-0 g-left-0 g-width-95 g-height-95 g-brd-around g-brd-5 g-brd-primary g-rounded-50x">
+									</span>
+                                <span class="u-icon-v3 u-shadow-v27 u-icon-size--xl g-width-95 g-height-95 g-color-white g-bg-primary g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+										<i class="pe-7s-refresh-2">
+										</i>
+									</span>
+                            </div>
+                        </div>
+                        <h3 class="h4 text-uppercase g-font-size-16 g-color-gray-light-v5 g-mb-10">
+                            Круглый год                        </h3>
+                        <p class="g-color-white-opacity-0_8 mb-0">
+                            Каждую неделю стартует новый тур в разные места планеты.                         </p>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+                            <div class="col-lg-12 g-px-30 g-mb-30">
+                    <!-- Icon Blocks -->
+                    <div class="g-bg-primary g-pos-rel g-parent g-rounded-20 g-bg-pink-opacity-0_9 u-shadow-v26 g-bg-pink--hover g-py-35 g-px-25 g-pl-70--sm">
+                        <div class="g-hidden-xs-down g-absolute-centered--y g-left-0">
+                            <div class="g-pull-50x-left g-brd-around g-brd-5 g-brd-white g-rounded-50x g-overflow-hidden">
+									<span class="d-block g-pos-abs g-top-0 g-left-0 g-width-95 g-height-95 g-brd-around g-brd-5 g-brd-primary g-rounded-50x">
+									</span>
+                                <span class="u-icon-v3 u-shadow-v27 u-icon-size--xl g-width-95 g-height-95 g-color-white g-bg-primary g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+										<i class="pe-7s-rocket">
+										</i>
+									</span>
+                            </div>
+                        </div>
+                        <h3 class="h4 text-uppercase g-font-size-16 g-color-gray-light-v5 g-mb-10">
+                            Скорость                        </h3>
+                        <p class="g-color-white-opacity-0_8 mb-0">
+                            Мы очень организованы. Профессионально и быстро формируем туры.                        </p>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+                            <div class="col-lg-12 g-px-30 g-mb-30">
+                    <!-- Icon Blocks -->
+                    <div class="g-bg-primary g-pos-rel g-parent g-rounded-20 g-bg-pink-opacity-0_9 u-shadow-v26 g-bg-pink--hover g-py-35 g-px-25 g-pl-70--sm">
+                        <div class="g-hidden-xs-down g-absolute-centered--y g-left-0">
+                            <div class="g-pull-50x-left g-brd-around g-brd-5 g-brd-white g-rounded-50x g-overflow-hidden">
+									<span class="d-block g-pos-abs g-top-0 g-left-0 g-width-95 g-height-95 g-brd-around g-brd-5 g-brd-primary g-rounded-50x">
+									</span>
+                                <span class="u-icon-v3 u-shadow-v27 u-icon-size--xl g-width-95 g-height-95 g-color-white g-bg-primary g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+										<i class="pe-7s-world">
+										</i>
+									</span>
+                            </div>
+                        </div>
+                        <h3 class="h4 text-uppercase g-font-size-16 g-color-gray-light-v5 g-mb-10">
+                            Разнообразие                        </h3>
+                        <p class="g-color-white-opacity-0_8 mb-0">
+                            Стандартные скучные туры – это не к нам! Мы знаем самое интересное.                        </p>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+                    </div>
+        <div class="text-center">
+            <a class="g-bg-transparent--focus g-brd-white--focus g-rounded-50x g-px-30 g-py-30" href="#modal-messengers" data-modal-target="#modal-messengers" data-modal-effect="blur">
+				<span class="u-icon-v3 u-shadow-v30 u-icon-size--lg g-width-70 g-height-70 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+				<i class="et-icon-chat">
+				</i>
+				</span>
+            </a>
+        </div>
+    </div>
+</section><!--KLM -->
+<div class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options="{
+	settings_mode_oneelement_max_offset: '150'
+	}">
+    <!-- Parallax Image -->
+    <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background-image: url(/plugins/fsFields/uploads/1/images/001.jpg);">
+    </div>
+    <section id="klm" class="g-flex-centered g-height-550 g-color-white u-bg-overlay g-bg-white-opacity-0_8 g-py-60">
+        <div class="container u-bg-overlay__inner">
+            <!-- Download KLM -->
+            <div id="klm" class="u-shadow-v5 g-bg-white g-brd-around g-brd-gray-light-v4 g-line-height-2 g-color-white g-rounded-0 g-pa-30">
+                <div class="container g-pa-30 g-mb-25">
 
-</html>
+                    <div class="row">
+                        <div class="col-md-8 align-self-center">
+                            <h3 class="h3 primary">
+                                Как путешествовать и зарабатывать одновременно                            </h3>
+                            <p class="lead g-mb-25 g-color-primary g-mb-0--lg">
+                                [PDF] Скачай файл сейчас и получи 11 конкретных рекомендаций.                            </p>
+                        </div>
+                        <div class="col-md-4 align-self-center">
+                                                            <form action="https://pinkpeony.murrmeland.com/EmailForm/Send/" data-event-success="Lead"
+                                      data-event-data='{"form":"klm"}' class="form-contact rounded g-px-15 g-py-10">
+                                    <input type="hidden" name="title" value="Ваша ссылка на скачивание файла"/>
+                                    <input type="hidden" value="" name="redirect"/>
+
+                                    <div class="flex-fill">
+                                        <label class="form-group g-pos-rel w-100">
+                                            <input required
+                                                   class="form-control u-shadow-v26 g-bg-transparent g-bg-transparent--focus g-brd-grey-opacity-0_5 g-brd-grey--focus g-placeholder-inherit g-color-primary g-rounded-30 g-pl-25 g-pr-40 g-py-13"
+                                                   type="email" name="email-client" placeholder="E-mail" data-mask="E">
+                                            <span class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-primary">
+                                    <i class="icon-envelope"></i>
+                                </span>
+                                        </label>
+                                    </div>
+                                    <button type="submit" data-event-click="klm"
+                                            class="btn-block btn btn-xl text-uppercase u-btn-primary g-color-white--hover g-pos-rel g-font-size-13 g-rounded-30 g-px-20 g-py-13">
+                                        Скачать                                    </button>
+                                    <div class="confiden-wrap text-lg-left g-color-gray-dark-v4 ml-4 g-mt-10 g-font-size-13"><i
+                                                class="fa fa-check-square fa-lg"></i>
+                                        <a href="#modal-confiden"
+                                           class="confiden g-color-gray-dark-v4 u-link-v5"
+                                           data-modal-target="#modal-confiden" data-modal-effect="blur"> Даю согласие на
+                                            обработку данных</a>
+                                    </div>
+                                </form>
+                                                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Download KLM -->
+        </div>
+    </section>
+</div>
+<!--KLM --><!-- Blog -->
+	<section id="blog" class="g-theme-bg-gray-light-v2 g-py-80 u-shadow-v2">
+    <div class="clearfix g-pt-add"></div>
+		<div class="container text-center g-width-1025 g-mb-30">
+			<div class="u-heading-v7-3 g-mb-30">
+				<h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+					Самые сокровенные места Земли				</h2>
+				<div class="u-heading-v7-divider g-brd-gray-light-v4 g-mb-20">
+					<i class="fa fa-heart g-font-size-8 g-color-primary">
+					</i>
+					<i class="fa fa-heart g-font-size-11 g-color-primary">
+					</i>
+					<i class="fa fa-heart g-font-size-default g-color-primary">
+					</i>
+					<i class="fa fa-heart g-font-size-11 g-color-primary">
+					</i>
+					<i class="fa fa-heart g-font-size-8 g-color-primary">
+					</i>
+				</div>
+				<p class="h5 g-theme-color-gray-light-v1">
+					Наша планета полна загадок. Многие невероятно красивые и загадочные места были долгое время сокрыты даже от ученых...				</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="js-carousel g-mb-40" data-autoplay="0" data-infinite="true" data-slides-show="3" data-arrows-classes="hidden-down u-arrow-v1 g-pos-abs g-top-100x g-width-50 g-height-50 g-rounded-50x g-font-size-12 g-color-primary g-theme-bg-gray-light-v5 g-theme-bg-gray-light-v12--hover g-mt-40"
+			data-arrow-left-classes="fa fa-chevron-left g-left-0" data-arrow-right-classes="fa fa-chevron-right g-right-0" data-responsive='[{
+			"breakpoint": 1200,
+			"settings": {
+			"slidesToShow": 4
+			}
+			}, {
+			"breakpoint": 992,
+			"settings": {
+			"slidesToShow": 2
+			}
+			}, {
+			"breakpoint": 576,
+			"settings": {
+			"slidesToShow": 1
+			}
+			}]'>
+				 					<!-- Article -->
+					<div class="js-slide g-px-10 u-angle-v1--top-right--bg-light" 2						>
+						<article class="u-shadow-v27 g-transform-translate-y-5--hover g-transition-0_2 g-transition--ease-in">
+							<a href="#blog1" data-modal-target="#blog1" data-modal-effect="blur">
+							<img class="img-fluid w-100" src="/plugins/fsFields/uploads/1/images/murr_place-008.jpg" alt="Око Сахары">
+							</a>
+							<div class="g-bg-white g-py-30 g-px-25">
+								<h3 class="text-uppercase g-color-primary g-font-size-15 g-font-weight-400 g-mb-10">
+                                    <a href="#blog1" data-modal-target="#blog1" data-modal-effect="blur">
+                                        Око Сахары                                    </a>
+								</h3>
+
+								<p class="g-line-height-1_8 g-font-size-14 g-theme-color-gray-light-v1 g-pt-0">
+									Исследователи предположили, что именно здесь находилась знаменитая Атлантида                                    <br />
+                                    &nbsp;
+                                    <a class="u-link-v5" href="#blog1" data-modal-target="#blog1" data-modal-effect="blur">
+                                        <span class="g-color-primary g-font-size-17">
+                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fa fa-angle-right"></i>
+                                        </span>
+                                    </a>
+								</p>
+							</div>
+						</article>
+					</div>
+					<!-- End Article -->
+										<!-- Article -->
+					<div class="js-slide g-px-10 u-angle-v1--top-right--bg-light" 3						>
+						<article class="u-shadow-v27 g-transform-translate-y-5--hover g-transition-0_2 g-transition--ease-in">
+							<a href="#blog2" data-modal-target="#blog2" data-modal-effect="blur">
+							<img class="img-fluid w-100" src="/plugins/fsFields/uploads/1/images/murr_place-009.jpg" alt="Алмазный карьер Дьявик">
+							</a>
+							<div class="g-bg-white g-py-30 g-px-25">
+								<h3 class="text-uppercase g-color-primary g-font-size-15 g-font-weight-400 g-mb-10">
+                                    <a href="#blog2" data-modal-target="#blog2" data-modal-effect="blur">
+                                        Алмазный карьер Дьявик                                    </a>
+								</h3>
+
+								<p class="g-line-height-1_8 g-font-size-14 g-theme-color-gray-light-v1 g-pt-0">
+									Самый знаменитый и необычный алмазный кратер, который чудом не затапливает                                    <br />
+                                    &nbsp;
+                                    <a class="u-link-v5" href="#blog2" data-modal-target="#blog2" data-modal-effect="blur">
+                                        <span class="g-color-primary g-font-size-17">
+                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fa fa-angle-right"></i>
+                                        </span>
+                                    </a>
+								</p>
+							</div>
+						</article>
+					</div>
+					<!-- End Article -->
+										<!-- Article -->
+					<div class="js-slide g-px-10 u-angle-v1--top-right--bg-light" 1						>
+						<article class="u-shadow-v27 g-transform-translate-y-5--hover g-transition-0_2 g-transition--ease-in">
+							<a href="#blog3" data-modal-target="#blog3" data-modal-effect="blur">
+							<img class="img-fluid w-100" src="/plugins/fsFields/uploads/1/images/murr_place-010.jpg" alt="Тимгад ">
+							</a>
+							<div class="g-bg-white g-py-30 g-px-25">
+								<h3 class="text-uppercase g-color-primary g-font-size-15 g-font-weight-400 g-mb-10">
+                                    <a href="#blog3" data-modal-target="#blog3" data-modal-effect="blur">
+                                        Тимгад                                     </a>
+								</h3>
+
+								<p class="g-line-height-1_8 g-font-size-14 g-theme-color-gray-light-v1 g-pt-0">
+									Настоящий древнеримский город, затерянный в алжирской пустыне                                    <br />
+                                    &nbsp;
+                                    <a class="u-link-v5" href="#blog3" data-modal-target="#blog3" data-modal-effect="blur">
+                                        <span class="g-color-primary g-font-size-17">
+                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fa fa-angle-right"></i>
+                                            <i class="fa fa-angle-right"></i>
+                                        </span>
+                                    </a>
+								</p>
+							</div>
+						</article>
+					</div>
+					<!-- End Article -->
+								</div>
+			<div class="text-center">
+				<a class="g-bg-transparent--focus g-brd-white--focus g-rounded-50x g-px-30 g-py-30" href="#modal-messengers" data-modal-target="#modal-messengers" data-modal-effect="blur">
+				<span class="u-icon-v3 u-shadow-v30 u-icon-size--lg g-width-70 g-height-70 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+				<i class="et-icon-chat">
+				</i>
+				</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- End Section Content -->
+
+    <!-- Blog full text modal window -->
+    <div id="blog1" class="blog-full-text text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close sticky-top" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close">
+            </i>
+        </button>
+        <h4 class="g-mb-20 g-color-primary g-font-size-40 g-font-goodvibes text-center">
+            Око Сахары        </h4>
+        <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-20">
+            <i class="fa fa-quote-right u-divider__icon g-bg-white g-color-gray-light-v3">
+            </i>
+        </div>
+        <img class="img-fluid" src="/plugins/fsFields/uploads/1/images/murr_place-008.jpg" alt="Око Сахары">
+        <p class="g-my-20">
+            Это необычное место, которое, тем не менее, ускользало от взглядов ученых долгое время. 
+<br />
+<br />Рассмотреть его в том виде, который и сделал его знаменитым, получилось только когда человек оказался в космосе. Но, возможно, таким образом получится разгадать одну из самых древних загадок, над которыми бьется человечество.
+<br />
+<br />Некоторые ученые относят сроки и причины возникновения такой аномалии к тем временем, когда суперконтинент Пангея развалился и стал затем Африкой и Южной Америкой и даже пытаются связать эти события, но внятной связи не прослеживается.
+<br />
+<br />Место также известно, как структура Ришат и расположено оно в мавританской части пустыни Сахара, недалеко от поселения Уадан. Оком Сахары оно названо потому, что реально похоже на глаз - если смотреть буквально с космической высоты. Ландшафт выглядит как глаз, а само образование - как круглый зрачок.
+<br />
+<br />Сейчас изображение доступно на любой спутниковой карте, а вот до появления таких снимков это место никак не выделяли. Его просто достаточно сложно обнаружить и оценить всю картинку с уровня обычного человеческого роста. Открытие приписывают космонавтам НАСА, которые в 1965 году получили задание зафиксировать "большие круглые элементы" на поверхности Земли - изучались все потенциальные следы падения метеоритов.
+<br />
+<br />(с) tour2go        </p>
+        <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-20">
+            <i class="fa fa-quote-left u-divider__icon g-bg-white g-color-gray-light-v3">
+            </i>
+        </div>
+        <div class="float-right g-mt-5 g-mb-25">
+            <button type="button" class="btn btn-primary" onclick="Custombox.modal.close();" data-dismiss="modal">
+                Закрыть
+            </button>
+        </div>
+    </div>
+    <!-- End Blog full text modal window -->
+    <!-- Blog full text modal window -->
+    <div id="blog2" class="blog-full-text text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close sticky-top" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close">
+            </i>
+        </button>
+        <h4 class="g-mb-20 g-color-primary g-font-size-40 g-font-goodvibes text-center">
+            Алмазный карьер Дьявик        </h4>
+        <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-20">
+            <i class="fa fa-quote-right u-divider__icon g-bg-white g-color-gray-light-v3">
+            </i>
+        </div>
+        <img class="img-fluid" src="/plugins/fsFields/uploads/1/images/murr_place-009.jpg" alt="Алмазный карьер Дьявик">
+        <p class="g-my-20">
+            Алмазный карьер "Дьявик" в Канаде - удивительное место. Как на всех подобных месторождениях, где добыча алмазов идет достаточно долго, главным здесь стал огромный карьер. Таких дыр по планете насверлено человечеством уже довольно много, но некоторые из них всё же выделяются и поражают воображение.
+<br />
+<br />"Дьявик" находится на небольшом острове на озере Гра (Lac de Gras). Площадь острова - 20 квадратных километров и неофициально он называется Ист-Айленд.
+<br />
+<br />Канадский "Дьявик" впечатляет в первую очередь тем, что выглядит это с некоторых ракурсов просто как дыра в море, в которую непонятно почему не стекает вода.
+<br />
+<br />На озере Гра, которое имеет длину в 60 километров, а также в его окрестностях, можно насчитать как минимум 7 таких карьеров. Месторождение под названием Ekati, также включающее в себя несколько больших карьеров, находится недалеко на северо-запад. Однако конкретно "Дьявик", доходящий краями карьера почти до берегов острова, на котором находится, стал самым знаменитым.
+<br />
+<br />(с) tour2go        </p>
+        <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-20">
+            <i class="fa fa-quote-left u-divider__icon g-bg-white g-color-gray-light-v3">
+            </i>
+        </div>
+        <div class="float-right g-mt-5 g-mb-25">
+            <button type="button" class="btn btn-primary" onclick="Custombox.modal.close();" data-dismiss="modal">
+                Закрыть
+            </button>
+        </div>
+    </div>
+    <!-- End Blog full text modal window -->
+    <!-- Blog full text modal window -->
+    <div id="blog3" class="blog-full-text text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close sticky-top" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close">
+            </i>
+        </button>
+        <h4 class="g-mb-20 g-color-primary g-font-size-40 g-font-goodvibes text-center">
+            Тимгад         </h4>
+        <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-20">
+            <i class="fa fa-quote-right u-divider__icon g-bg-white g-color-gray-light-v3">
+            </i>
+        </div>
+        <img class="img-fluid" src="/plugins/fsFields/uploads/1/images/murr_place-010.jpg" alt="Тимгад ">
+        <p class="g-my-20">
+            Тимгад - затерянный римский город на краю пустыни Сахара, который оставался скрытым под песком в течение почти тысячи лет. Сейчас эта территория относится к Алжиру, но первое упоминание о Тимгаде относится ещё к 18 веку. Хотя тогда никто не поверил в римский город, затерявшийся в песках североафриканской пустыни.
+<br />
+<br />Шотландский исследователь Джеймс Брюс в 1765 году стал первым европейцем, посетившим Тамгад. Его исследовательская группа искала истоки Нила, но случайно нашла затерянный в песках город. Но ни фотографий, ни каких либо реликвий из числа найденных они не могли доставить в Европу - а к их сообщениям отнеслись достаточно скептически.
+<br />
+<br />Хотя по описаниям Брюса, они буквально руками откопали несколько статуй императора Антонина Пия. Тогда исследователи не могли оценить размер всего полиса, но описали место как "маленький город, но полный элегантных зданий".
+<br />
+<br />Позже выяснилось, что местами город находился по слоем песка примерно 1 метр: поэтому, с одной стороны, он оказался в законсервированном состоянии и хорошо сохранился, а с другой - его раскопки не были такой уж сложностью и Джеймс Брюс с командой запросто могли одними руками откопать какие-то артефакты.
+<br />
+<br />Но в итоге Джеймс Брюс из-за скептического отношения к его рассказам не стал или же не смог вернуться в найденный город. В итоге прошло ещё сто лет прежде, чем его открыли снова. Полноценные раскопки начались в 50-х годах прошлого века. 
+<br />
+<br />И выяснилось, что именно здесь, на площади около 50 гектаров, можно увидеть некоторые из самых впечатляющих римских руин во всем мире. Многие специалисты утверждают, что Тимгад незаслуженно менее известен по сравнению с теми же Помпеями, поскольку как пример римского градостроительства он во многим более познавателен и ярок.
+<br />
+<br />Наверное, самым впечатляющими могут стать фотографии Тимгада с высоты. Потому что районы города похожи на вполне современные и узнаваемые планировки. Скажем так, современные принципы строительства городов оказывается не так уж и современны. Как видим, римляне строили так же. Сегодня считается, что это один из самых старых примеров такой городской планировки.
+<br />
+<br />(с) tour2go        </p>
+        <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-20">
+            <i class="fa fa-quote-left u-divider__icon g-bg-white g-color-gray-light-v3">
+            </i>
+        </div>
+        <div class="float-right g-mt-5 g-mb-25">
+            <button type="button" class="btn btn-primary" onclick="Custombox.modal.close();" data-dismiss="modal">
+                Закрыть
+            </button>
+        </div>
+    </div>
+    <!-- End Blog full text modal window -->
+<!-- Testimonials Advanced -->
+<section id="feedback" class="g-py-80 u-shadow-v2">
+    <div class="container text-center g-width-1025 g-mb-30">
+        <div class="u-heading-v7-3 g-mb-20">
+            <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+                О нас говорят            </h2>
+            <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-default g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+            </div>
+        </div>
+        <p class="h5 g-theme-color-gray-light-v1">
+            отзывы наших Клиентов        </p>
+    </div>
+    <div class="container">
+        <!-- Icon Blocks -->
+        <div class="js-carousel g-pb-70" data-infinite="true" data-arrows-classes="u-arrow-v1 g-width-40 g-height-40 g-color-gray-dark-v5 g-bg-white g-color-white--hover g-bg-primary--hover rounded g-absolute-centered--x g-bottom-0"
+             data-arrow-left-classes="fa fa-angle-left g-ml-minus-25" data-arrow-right-classes="fa fa-angle-right g-ml-25">
+                            <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <img class="d-inline-block g-width-180 g-height-180 g-brd-around g-brd-5 g-brd-white rounded-circle"
+                                     src="/plugins/fsFields/uploads/1/images/murr_face-005.jpg"
+                                     alt="Реальные отзывы: MurrMeLand - Самый простой и лёгкий способ создать мультиссылку в инстаграм, мультилендинг, одностраничный сайт визитку, landing page (лендинг пейдж) бесплатно. Без программистов, хостинга, домена и прочего. 15 готовых экранов - всё необходимое и достаточное. Всё для приёма заявок: несколько форм захвата контактов, мессенджеры. Внешние ссылки на соцсети, сайты, скачивание файла. Контакты с активной картой. Великолепное отображение на всех дисплеях. ">
+                                <div class="g-py-25">
+                                    <h4 class="h5 g-color-black text-uppercase g-mb-0">
+                                        Эмануил                                    </h4>
+                                    <em class="g-color-primary">
+                                        Архитектор                                    </em>
+                                </div>
+                                <blockquote class="lead g-line-height-1_8 g-mb-25">
+                                    "
+                                    Путешествие по скандинавским странам было просто невероятным! 
+<br />Обязательно поеду с вами еще куда-нибудь!                                    "
+                                </blockquote>
+                                <div class="js-rating align-self-center g-color-yellow" data-rating="5" data-spacing="5" data-backward-icons-classes="fa fa-star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                </div>
+                            <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <img class="d-inline-block g-width-180 g-height-180 g-brd-around g-brd-5 g-brd-white rounded-circle"
+                                     src="/plugins/fsFields/uploads/1/images/murr_face-003.jpg"
+                                     alt="Реальные отзывы: MurrMeLand - Самый простой и лёгкий способ создать мультиссылку в инстаграм, мультилендинг, одностраничный сайт визитку, landing page (лендинг пейдж) бесплатно. Без программистов, хостинга, домена и прочего. 15 готовых экранов - всё необходимое и достаточное. Всё для приёма заявок: несколько форм захвата контактов, мессенджеры. Внешние ссылки на соцсети, сайты, скачивание файла. Контакты с активной картой. Великолепное отображение на всех дисплеях. ">
+                                <div class="g-py-25">
+                                    <h4 class="h5 g-color-black text-uppercase g-mb-0">
+                                        Линда                                    </h4>
+                                    <em class="g-color-primary">
+                                        Аналитик                                    </em>
+                                </div>
+                                <blockquote class="lead g-line-height-1_8 g-mb-25">
+                                    "
+                                    Тур в Перу оказался более мистическим и волшебным, чем я могла представить! 
+<br />Планирую посетить с вами другие страны!                                    "
+                                </blockquote>
+                                <div class="js-rating align-self-center g-color-yellow" data-rating="5" data-spacing="5" data-backward-icons-classes="fa fa-star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                </div>
+                            <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <img class="d-inline-block g-width-180 g-height-180 g-brd-around g-brd-5 g-brd-white rounded-circle"
+                                     src="/plugins/fsFields/uploads/1/images/murr_face-004.jpg"
+                                     alt="Реальные отзывы: MurrMeLand - Самый простой и лёгкий способ создать мультиссылку в инстаграм, мультилендинг, одностраничный сайт визитку, landing page (лендинг пейдж) бесплатно. Без программистов, хостинга, домена и прочего. 15 готовых экранов - всё необходимое и достаточное. Всё для приёма заявок: несколько форм захвата контактов, мессенджеры. Внешние ссылки на соцсети, сайты, скачивание файла. Контакты с активной картой. Великолепное отображение на всех дисплеях. ">
+                                <div class="g-py-25">
+                                    <h4 class="h5 g-color-black text-uppercase g-mb-0">
+                                        Ирина                                    </h4>
+                                    <em class="g-color-primary">
+                                        Кулинар                                    </em>
+                                </div>
+                                <blockquote class="lead g-line-height-1_8 g-mb-25">
+                                    "
+                                    Видела Африку только по телевидению. Но такой восторг и незабываемые впечатления, можно получить только там побывав. Спасибо! Теперь я с вами!                                    "
+                                </blockquote>
+                                <div class="js-rating align-self-center g-color-yellow" data-rating="5" data-spacing="5" data-backward-icons-classes="fa fa-star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                </div>
+                    </div>
+        <!-- End Icon Blocks -->
+    </div>
+</section>
+<!-- End Testimonials Advanced --><!-- CTA -->
+<div class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options="{
+	settings_mode_oneelement_max_offset: '150'
+	}">
+    <!-- Parallax Image -->
+    <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background-image: url(/plugins/fsFields/uploads/1/images/001.jpg);">
+    </div>
+    <section id="cta1" class="g-flex-centered g-height-auto g-color-white u-bg-overlay g-bg-primary-opacity-0_9 g-py-60">
+        <div class="container u-bg-overlay__inner">
+            <div class="justify-content-center">
+                <div class="u-heading-v7-3 text-center g-mb-15">
+                    <h2 class="u-heading-v7__title g-color-white g-font-size-50 g-font-goodvibes g-mt-15 g-mb-15">
+                        Мы подготовили новый потрясающий тур! Присоединяйся!                    </h2>
+                </div>
+                <div class="container g-width-945">
+                    <p class="h5 g-color-white text-center g-mb-25">
+                        Сообщи нам свой e-mail адрес, - мы уведомим тебя о лучших турах с нами!                    </p>
+                </div>
+                <!-- Subscribe -->
+                <form data-event-success="Lead" data-event-data='{"form":"cta1"}' class="form-contact input-group" action="https://pinkpeony.murrmeland.com/EmailForm/Send/">
+                    <input type="hidden" value="" name="redirect" />
+                    <div class="container g-width-900 mx-auto">
+                        <div class="row">
+                            <div class="flex-fill g-pr-20">
+                                <label class="form-group g-pos-rel g-mx-15 w-100">
+                                    <input name="envelope-o" required class="g-pl-25 form-control g-pos-rel w-100 u-shadow-v26 g-bg-transparent g-bg-transparent--focus g-brd-white-opacity-0_5 g-brd-white--focus g-placeholder-inherit g-color-white g-rounded-50 g-pr-40 g-py-13"
+                                           placeholder="Ваш E-mail" data-mask="E" type="email">
+                                    <div class="g-pos-abs g-top-0 g-right-10 g-width-40 h-100 g-flex-centered g-color-white">
+                                        <i class="icon-envelope"></i>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-12 col-lg-2 text-md-center text-sm-center text-lg-left g-mb-15">
+                                <button class="btn u-btn-primary text-uppercase g-bg-transparent--focus g-brd-white-opacity-0_5 g-brd-white--focus g-rounded-30 g-px-25 g-py-13" type="submit">
+                                    Хочу с вами!                                </button>
+                            </div>
+                        </div>
+                        <div class="confiden-wrap g-ml-10 g-mb-15 g-font-size-13">
+                            <i class="fas fa-check-square fa-lg g-color-white-opacity-0_7"></i>
+                            &nbsp;
+                            <a href="#modal-confiden" class="confiden g-color-white-opacity-0_7 g-color-white--hover u-link-v5" data-modal-target="#modal-confiden" data-modal-effect="blur">&nbsp;Даю согласие на обработку данных</a>
+                        </div>
+                    </div>
+                </form>
+                <!-- / Subscribe -->
+            </div>
+        </div>
+    </section>
+</div>
+<!-- End CTA --><section id="tariffs" class="g-theme-bg-gray-light-v2 g-py-80 u-shadow-v2">
+    <div class="clearfix g-pt-add"></div>
+    <div class="container">
+        <div class="text-center g-mb-30">
+            <div class="u-heading-v7-3 g-mb-30">
+                <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+                    Простые тарифы                </h2>
+                <div class="u-heading-v7-divider g-brd-gray-light-v4 g-mb-20">
+                    <i class="fa fa-heart g-font-size-8 g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-11 g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-default g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-11 g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-8 g-color-primary">
+                    </i>
+                </div>
+                <p class="h5 g-theme-color-gray-light-v1">
+                    Всё понятно, доступно, без хитростей                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="js-carousel" data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-top-minus-15 text-center" data-autoplay="0" data-infinite="true"
+             data-slides-show="3"
+             data-arrows-classes="hidden-down u-arrow-v1 g-pos-abs g-top-100x g-width-50 g-height-50 g-rounded-50x g-font-size-12 g-color-primary g-theme-bg-gray-light-v5 g-theme-bg-gray-light-v12--hover"
+        data-arrow-left-classes="fa fa-chevron-left g-left-0" data-arrow-right-classes="fa fa-chevron-right g-right-0" data-responsive='[{
+        "breakpoint": 1200,
+        "settings": {
+        "slidesToShow": 4
+        }
+        }, {
+        "breakpoint": 1024,
+        "settings": {
+        "slidesToShow": 3
+        }
+        }, {
+        "breakpoint": 992,
+        "settings": {
+        "slidesToShow": 2
+        }
+        }, {
+        "breakpoint": 576,
+        "settings": {
+        "slidesToShow": 1
+        }
+        }]'>
+                    <div class="js-slide g-px-10 g-pt-15 u-angle-v1--top-right--bg-light">
+
+                                <div class="col- g-mb-30" data-animation="fadeInUp" data-animation-delay="400" data-animation-duration="1000">
+                    <article class="g-rounded-5 g-brd-around g-brd-gray-light-v5 g-overflow-hidden u-shadow-v1-5--hover g-transition-0_3">
+                        <header class="g-bg-primary text-center g-color-white g-px-40 g-py-60">
+                            <h3 class="g-font-weight-400 g-color-white g-mb-5">
+                                Самостоятельно                            </h3>
+                            <div class="g-font-size-18 g-font-weight-400 g-color-white-opacity-0_7 g-line-height-1_2 g-mt-15">
+                                Самостоятельные экскурсии                                <em class="d-block g-font-style-normal g-font-size-26 g-font-weight-400 g-mt-15 g-color-white-opacity-0_7">
+                                    3000                                    ₽                                    <i class="fa fa-rub g-ml-7 g-font-size-20 g-color-white-opacity-0_7"></i>
+                                </em>
+                                                                <em class="d-block g-font-style-normal g-font-size-18 g-font-weight-300 g-mt-10 g-color-white-opacity-0_5">
+                                    <s>
+                                        3500                                        ₽                                        <i class="fa fa-rub g-ml-7 g-font-size-17 g-color-white-opacity-0_5"></i>
+                                    </s>
+                                </em>
+                                <p class="g-font-size-16 g-mt-10">экономия =
+                                    500₽                                </p>
+                                                            </div>
+                        </header>
+                        <div class="g-color-gray-dark-v4 g-font-weight-500 g-px-30 g-pt-40 g-pb-20">
+                            <ul class="list-unstyled mb-0">
+                                                                <li class="g-mb-15">
+                                    <i class="icon-check g-mr-7 g-font-size-20"></i>
+                                    Отель                                </li>
+                                                                <li class="g-mb-15">
+                                    <i class="icon-close g-mr-7 g-font-size-20"></i>
+                                    <span class="g-color-gray-light-v3"><s>Экскурсии с гидом</s></span>                                </li>
+                                                                <li class="g-mb-15">
+                                    <i class="icon-close g-mr-7 g-font-size-20"></i>
+                                    <span class="g-color-gray-light-v3"><s>Полный рацион</s></span>                                </li>
+                                                            </ul>
+                        </div>
+                        <a class="btn w-100 u-btn-primary g-bg-primary rounded-0 g-font-weight-500 g-font-size-16--lg g-pa-15-30" href="">
+                            Хочу самостоятельно!                        </a>
+                    </article>
+                </div>
+            </div>
+                        <div class="js-slide g-px-10 g-pt-15 u-angle-v1--top-right--bg-light">
+
+                                <span class="u-badge-v4 g-rounded-50x g-brd-around g-brd-5 g-mt-30 g-mr-30">
+                    <span class="u-icon-v4 u-icon-v4-rounded-50x u-icon-v4-bg-yellow g-ml-minus-60 top-minus-10 g-brd-around g-brd-white g-brd-2">
+                        <span class="u-icon-v4-inner">
+                            <i class="pe-7s-star g-color-white"></i>
+                        </span>
+                    </span>
+                </span>
+                                <div class="col- g-mb-30" data-animation="fadeInUp" data-animation-delay="400" data-animation-duration="1000">
+                    <article class="g-rounded-5 g-brd-around g-brd-gray-light-v5 g-overflow-hidden u-shadow-v1-5--hover g-transition-0_3">
+                        <header class="g-bg-primary text-center g-color-white g-px-40 g-py-60">
+                            <h3 class="g-font-weight-400 g-color-white g-mb-5">
+                                С гидом                            </h3>
+                            <div class="g-font-size-18 g-font-weight-400 g-color-white-opacity-0_7 g-line-height-1_2 g-mt-15">
+                                Экскурсии с гидом                                <em class="d-block g-font-style-normal g-font-size-26 g-font-weight-400 g-mt-15 g-color-white-opacity-0_7">
+                                    4000                                    $                                    <i class="fa fa-rub g-ml-7 g-font-size-20 g-color-white-opacity-0_7"></i>
+                                </em>
+                                                                <em class="d-block g-font-style-normal g-font-size-18 g-font-weight-300 g-mt-10 g-color-white-opacity-0_5">
+                                    <s>
+                                        4600                                        $                                        <i class="fa fa-rub g-ml-7 g-font-size-17 g-color-white-opacity-0_5"></i>
+                                    </s>
+                                </em>
+                                <p class="g-font-size-16 g-mt-10">экономия =
+                                    600$                                </p>
+                                                            </div>
+                        </header>
+                        <div class="g-color-gray-dark-v4 g-font-weight-500 g-px-30 g-pt-40 g-pb-20">
+                            <ul class="list-unstyled mb-0">
+                                                                <li class="g-mb-15">
+                                    <i class="icon-check g-mr-7 g-font-size-20"></i>
+                                    Отель                                </li>
+                                                                <li class="g-mb-15">
+                                    <i class="icon-check g-mr-7 g-font-size-20"></i>
+                                    Экскурсии с гидом                                </li>
+                                                                <li class="g-mb-15">
+                                    <i class="icon-close g-mr-7 g-font-size-20"></i>
+                                    <span class="g-color-gray-light-v3"><s>Полный рацион</s></span>                                </li>
+                                                            </ul>
+                        </div>
+                        <a class="btn w-100 u-btn-primary g-bg-primary rounded-0 g-font-weight-500 g-font-size-16--lg g-pa-15-30" href="">
+                            Хочу с гидом!                        </a>
+                    </article>
+                </div>
+            </div>
+                        <div class="js-slide g-px-10 g-pt-15 u-angle-v1--top-right--bg-light">
+
+                                <div class="col- g-mb-30" data-animation="fadeInUp" data-animation-delay="400" data-animation-duration="1000">
+                    <article class="g-rounded-5 g-brd-around g-brd-gray-light-v5 g-overflow-hidden u-shadow-v1-5--hover g-transition-0_3">
+                        <header class="g-bg-primary text-center g-color-white g-px-40 g-py-60">
+                            <h3 class="g-font-weight-400 g-color-white g-mb-5">
+                                Премиум                            </h3>
+                            <div class="g-font-size-18 g-font-weight-400 g-color-white-opacity-0_7 g-line-height-1_2 g-mt-15">
+                                Персональные экскурсии                                <em class="d-block g-font-style-normal g-font-size-26 g-font-weight-400 g-mt-15 g-color-white-opacity-0_7">
+                                    5000                                    €                                    <i class="fa fa-rub g-ml-7 g-font-size-20 g-color-white-opacity-0_7"></i>
+                                </em>
+                                                                <em class="d-block g-font-style-normal g-font-size-18 g-font-weight-300 g-mt-10 g-color-white-opacity-0_5">
+                                    <s>
+                                        5800                                        €                                        <i class="fa fa-rub g-ml-7 g-font-size-17 g-color-white-opacity-0_5"></i>
+                                    </s>
+                                </em>
+                                <p class="g-font-size-16 g-mt-10">экономия =
+                                    800€                                </p>
+                                                            </div>
+                        </header>
+                        <div class="g-color-gray-dark-v4 g-font-weight-500 g-px-30 g-pt-40 g-pb-20">
+                            <ul class="list-unstyled mb-0">
+                                                                <li class="g-mb-15">
+                                    <i class="icon-check g-mr-7 g-font-size-20"></i>
+                                    Отель                                </li>
+                                                                <li class="g-mb-15">
+                                    <i class="icon-check g-mr-7 g-font-size-20"></i>
+                                    Персональная программа                                </li>
+                                                                <li class="g-mb-15">
+                                    <i class="icon-check g-mr-7 g-font-size-20"></i>
+                                    Полный рацион                                </li>
+                                                            </ul>
+                        </div>
+                        <a class="btn w-100 u-btn-primary g-bg-primary rounded-0 g-font-weight-500 g-font-size-16--lg g-pa-15-30" href="">
+                            Хочу премиум!                        </a>
+                    </article>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section><!-- Gallery -->
+<section id="gallery" class="g-py-80 g-bg-gray-light-v5 u-shadow-v2">
+    <div class="container text-center g-width-1025 g-mb-30">
+        <div class="u-heading-v7-3 g-mb-30">
+            <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+                Невероятные фото            </h2>
+            <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                <i class="pe-7s-camera g-font-size-18 g-color-primary">
+                </i>
+                <i class="pe-7s-camera g-font-size-26 g-color-primary">
+                </i>
+                <i class="pe-7s-camera g-font-size-36 g-color-primary">
+                </i>
+                <i class="pe-7s-camera g-font-size-26 g-color-primary">
+                </i>
+                <i class="pe-7s-camera g-font-size-18 g-color-primary">
+                </i>
+            </div>
+        </div>
+        <p class="h5 g-theme-color-gray-light-v1">
+            Но лучше один раз увидеть все своими глазами.
+<br />В путешествиях твои коллекции фото пополнятся невероятными снимками!        </p>
+    </div>
+    <div class="container g-width-1025 mx-auto">
+        <!-- Icon Blocks -->
+        <ul class="row list-inline g-mb-20">
+                        <li class="col list-inline-item g-mr-0 g-mb-20">
+
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v30 g-bg-primary g-color-white text-center g-rounded-6 g-py-3 g-px-3">
+
+                    <a class="js-fancybox d-block u-bg-overlay" href="javascript:;" data-fancybox="lightbox-gallery-hidden" data-src="/plugins/fsFields/uploads/1/images/murr_place-004.jpg" data-caption="Demo Сайт"
+                       data-speed="500" data-slideshow-speed="1000">
+                        <div class="g-min-height-170 g-bg-img-hero" style="background-image: url(/plugins/fsFields/uploads/1/images/murr_place-004.jpg);" alt="Demo Сайт"></div>
+                                            </a>
+                                <li class="col list-inline-item g-mr-0 g-mb-20">
+
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v30 g-bg-primary g-color-white text-center g-rounded-6 g-py-3 g-px-3">
+
+                    <a class="js-fancybox d-block u-bg-overlay" href="javascript:;" data-fancybox="lightbox-gallery-hidden" data-src="/plugins/fsFields/uploads/1/images/murr_place-007.jpg" data-caption="Demo Сайт"
+                       data-speed="500" data-slideshow-speed="1000">
+                        <div class="g-min-height-170 g-bg-img-hero" style="background-image: url(/plugins/fsFields/uploads/1/images/murr_place-007.jpg);" alt="Demo Сайт"></div>
+                                            </a>
+                                <li class="col list-inline-item g-mr-0 g-mb-20">
+
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v30 g-bg-primary g-color-white text-center g-rounded-6 g-py-3 g-px-3">
+
+                    <a class="js-fancybox d-block u-bg-overlay" href="javascript:;" data-fancybox="lightbox-gallery-hidden" data-src="/plugins/fsFields/uploads/1/images/murr_place-001.jpg" data-caption="Demo Сайт"
+                       data-speed="500" data-slideshow-speed="1000">
+                        <div class="g-min-height-170 g-bg-img-hero" style="background-image: url(/plugins/fsFields/uploads/1/images/murr_place-001.jpg);" alt="Demo Сайт"></div>
+                                                    <span class="g-absolute-centered g-bg-primary-opacity-0_9 g-pa-25 ml-auto w-100 h-100 g-color-white g-z-index-2">
+									<span class="g-font-size-46 g-absolute-centered text-center">3+</span>
+									<span class="text-center g-absolute-centered g-font-size-20 g-mt-35">фото</span>
+									</span>
+                                            </a>
+                                                                <img class="js-fancybox g-hidden-xs-up" data-fancybox="lightbox-gallery-hidden" data-src="/plugins/fsFields/uploads/1/images/murr_place-005.jpg" data-caption="Demo Сайт"
+                             data-speed="500" data-slideshow-speed="1000">
+                                            <img class="js-fancybox g-hidden-xs-up" data-fancybox="lightbox-gallery-hidden" data-src="/plugins/fsFields/uploads/1/images/murr_place-006.jpg" data-caption="Demo Сайт"
+                             data-speed="500" data-slideshow-speed="1000">
+                                    </div>
+                <!-- End Icon Blocks -->
+            </li>
+        </ul>
+
+        <div class="text-center">
+            <a class="g-bg-transparent--focus g-brd-white--focus g-rounded-50x g-px-30 g-py-30" href="#modal-messengers" data-modal-target="#modal-messengers" data-modal-effect="blur">
+				<span class="u-icon-v3 u-shadow-v30 u-icon-size--lg g-width-70 g-height-70 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+				    <i class="et-icon-chat"></i>
+				</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- End Gallery --><!-- Block Links -->
+<section id="outlinks" class="g-py-80 u-angle-v1--top-right--bg-light g-bg-primary u-shadow-v6">
+    <div class="container text-center g-width-680 g-mb-30">
+        <div class="u-heading-v7-3 g-mb-30">
+            <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-color-white g-mb-20">
+                Страны. Нравы. Туры.            </h2>
+            <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                <i class="pe-7s-global g-font-size-18 g-color-white">
+                </i>
+                <i class="pe-7s-global g-font-size-26 g-color-white">
+                </i>
+                <i class="pe-7s-global g-font-size-36 g-color-white">
+                </i>
+                <i class="pe-7s-global g-font-size-26 g-color-white">
+                </i>
+                <i class="pe-7s-global g-font-size-18 g-color-white">
+                </i>
+            </div>
+        </div>
+        <p class="h5 g-color-white-opacity-0_8 mb-0">
+            Разумеется, в каждой стране свои традиции, исторические ценности, национальные и культурные особенности. Ознакомься с ними до поездки, и твоё путешествие станет еще более интересным и насыщенным.        </p>
+    </div>
+    <div class="container">
+        <!-- Icon Blocks -->
+        <div class="row g-mb-30">
+            <div class="col-lg-12 g-px-30 g-mb-20">
+                                    <!-- Media -->
+                    <div class="media u-block-hover u-shadow-v6 g-bg-white g-rounded-15 g-px-10 g-py-10 g-mb-15">
+                        <div class="d-flex align-self-center g-mr-5">
+								<span class="u-icon-v3 u-shadow-v30 u-icon-size--md g-width-60 g-height-60 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+									<i class="icon-link"></i>
+								</span>
+                        </div>
+                        <div class="media-body align-self-center">
+                            <p class="g-color-black g-color-primary--hover g-font-primary mb-0 g-px-10">
+                                Австралия                            </p>
+                        </div>
+                        <a data-event-click="links" href="https://www.australia.com/en" target="_blank" class="u-link-v2 g-z-index-2"></a>
+                    </div>
+                    <!-- End Media -->
+                                    <!-- Media -->
+                    <div class="media u-block-hover u-shadow-v6 g-bg-white g-rounded-15 g-px-10 g-py-10 g-mb-15">
+                        <div class="d-flex align-self-center g-mr-5">
+								<span class="u-icon-v3 u-shadow-v30 u-icon-size--md g-width-60 g-height-60 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+									<i class="icon-link"></i>
+								</span>
+                        </div>
+                        <div class="media-body align-self-center">
+                            <p class="g-color-black g-color-primary--hover g-font-primary mb-0 g-px-10">
+                                Великобритания                            </p>
+                        </div>
+                        <a data-event-click="links" href="https://www.visitbritain.com/ru/ru" target="_blank" class="u-link-v2 g-z-index-2"></a>
+                    </div>
+                    <!-- End Media -->
+                                    <!-- Media -->
+                    <div class="media u-block-hover u-shadow-v6 g-bg-white g-rounded-15 g-px-10 g-py-10 g-mb-15">
+                        <div class="d-flex align-self-center g-mr-5">
+								<span class="u-icon-v3 u-shadow-v30 u-icon-size--md g-width-60 g-height-60 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+									<i class="icon-link"></i>
+								</span>
+                        </div>
+                        <div class="media-body align-self-center">
+                            <p class="g-color-black g-color-primary--hover g-font-primary mb-0 g-px-10">
+                                Сингапур                            </p>
+                        </div>
+                        <a data-event-click="links" href="https://www.planetware.com/tourist-attractions/singapore-sin.htm" target="_blank" class="u-link-v2 g-z-index-2"></a>
+                    </div>
+                    <!-- End Media -->
+                                    <!-- Media -->
+                    <div class="media u-block-hover u-shadow-v6 g-bg-white g-rounded-15 g-px-10 g-py-10 g-mb-15">
+                        <div class="d-flex align-self-center g-mr-5">
+								<span class="u-icon-v3 u-shadow-v30 u-icon-size--md g-width-60 g-height-60 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+									<i class="icon-link"></i>
+								</span>
+                        </div>
+                        <div class="media-body align-self-center">
+                            <p class="g-color-black g-color-primary--hover g-font-primary mb-0 g-px-10">
+                                Япония                            </p>
+                        </div>
+                        <a data-event-click="links" href="https://visitjapan.ru/" target="_blank" class="u-link-v2 g-z-index-2"></a>
+                    </div>
+                    <!-- End Media -->
+                            </div>
+        </div>
+        <!-- End Icon Blocks -->
+        <div class="text-center">
+            <a class="g-bg-transparent--focus g-brd-white--focus g-rounded-50x g-px-30 g-py-30" href="#modal-messengers" data-modal-target="#modal-messengers" data-modal-effect="blur">
+				<span class="u-icon-v3 u-shadow-v30 u-icon-size--lg g-width-70 g-height-70 g-color-primary g-brd-around g-brd-5 g-brd-white g-rounded-50 g-color-white--hover g-opacity-1 g-bg-primary--hover g-transition-0_1 g-transition--ease-in">
+				    <i class="et-icon-chat"></i>
+				</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- End Block Links --><!-- VIDEO -->
+<div class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options="{
+	settings_mode_oneelement_max_offset: '150'
+	}">
+    <!-- Parallax Image -->
+    <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background-image: url(/plugins/fsFields/uploads/1/images/photos-1.jpg)">
+    </div>
+    <section id="video" class="g-flex-centered g-height-550 g-color-white u-bg-overlay g-bg-black-opacity-0_8--after g-py-80">
+        <div class="container u-bg-overlay__inner">
+            <div class="text-center">
+                <div class="u-heading-v7-3 g-mb-30">
+                    <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-color-white g-mt-15 g-mb-20">
+                        Вместо тысячи слов                    </h2>
+                    <div class="u-heading-v7-divider g-color-primary g-brd-gray-light-v4">
+                        <i class="fa fa-heart g-font-size-8"></i>
+                        <i class="fa fa-heart g-font-size-11"></i>
+                        <i class="fa fa-heart g-font-size-default"></i>
+                        <i class="fa fa-heart g-font-size-11"></i>
+                        <i class="fa fa-heart g-font-size-8"></i>
+                    </div>
+                </div>
+                <p class="h5 g-color-white g-mb-65">
+                    посмотри краткое видео о наших приключениях                </p>
+
+                <a data-event-click="video" class="js-fancybox u-link-v5 g-color-black" href="javascript:;" data-src="https://www.youtube.com/embed/5C7sbzU6uOc" data-speed="350" data-caption="видео">
+						<span class="align-middle u-icon-v3 u-icon-size--2xl u-block-hover--scale g-bg-primary-opacity-0_6 g-color-white-opacity-0_6 g-color-primary-opacity-0_7 g-color-primary--hover g-rounded-50x g-cursor-pointer mr-2">
+						<i class="g-font-size-42 g-pos-rel g-left-5 fa fa-play"></i>
+						</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</div>
+<!-- End VIDEO --><!-- thx-page -->
+<section id="thx-page" class="h-100 g-min-height-100vh g-flex-centered d-flex align-items-stretch g-bg-img-hero g-bg-grid-v1--before u-bg-overlay g-bg-white-opacity-0_9--after g-py-60 g-bg-img-hero" style="background-image: url(/plugins/fsFields/uploads/1/images/item-03.jpg); background-repeat:no-repeat; background-attachment:fixed;">
+
+    <div class="clearfix g-pt-add"></div>
+    <div class="container u-bg-overlay__inner ">
+        <div class="text-center g-mb-30">
+            <div class="u-heading-v7-3 g-mb-30">
+                <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+                    Спасибо за Ваш заказ!                </h2>
+                <div class="u-heading-v7-divider g-brd-gray-light-v4 g-mb-20">
+                    <i class="fa fa-heart g-font-size-8 g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-11 g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-default g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-11 g-color-primary">
+                    </i>
+                    <i class="fa fa-heart g-font-size-8 g-color-primary">
+                    </i>
+                </div>
+                <p class="h5 g-theme-color-gray-light-v1">
+                    Для первых покупателей действует специальное ограниченное предложение. 
+<br />Воспользуйтесь им!                </p>
+            </div>
+        </div>
+        <div class="row">
+                            <div class="embed-responsive embed-responsive-16by9 u-shadow-v1-5 g-mb-30">
+                    <iframe src="//www.youtube.com/embed/Squv4KI751w" allowfullscreen="1" width="100%" frameborder="0"></iframe>
+                </div>
+                                        <div class="container g-bg-white u-shadow-v1-5 g-line-height-2 g-pa-30 u-bg-overlay__inner">
+                    <!-- Download KLM -->
+                                            <div class="u-shadow-v3 g-bg-white g-brd-around g-brd-gray-light-v4 g-line-height-2 g-color-white g-rounded-0 g-pa-30 g-mb-30">
+                            <div class="container g-pa-15">
+                                <div class="row">
+                                    <div class="col-md-9 align-self-center">
+                                        <h3 class=" h1 g-color-primary">
+                                            Качайте обещанный файл сейчас!                                        </h3>
+                                        <p class="lead g-mb-20 g-color-primary g-mb-0--md">
+                                            Забирайте, пока весь интернет не скачали.                                        </p>
+                                    </div>
+                                    <div class="col-md-3 align-self-center text-md-right">
+                                        <a data-event-click="klm" download target="_blank" class="btn btn-lg u-btn-outline-primary g-brd-1 g-px-20 g-rounded-30" href="#thx-page">
+                                            Забрать файл!                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                <div class="container">
+                                <h2 class="align-self-center g-color-primary g-font-weight-300">
+                                        Бонус для Вас                                    </h2>
+                        </div>
+                        <div class="row g-pa-20">
+                            <div class="col-md-7 align-self-center px-lg-0 pr-lg-3 g-mb-20 g-mb-0--md">
+                                                                    <div class="g-bg-primary g-color-white g-pos-abs g-mt-10 g-mr-minus-10 g-right-5 g-width-100 g-height-100 rounded-circle u-shadow-v26 g-brd-around">
+                                        <div class="g-absolute-centered text-center">
+                                            <p class="g-font-weight-600 g-font-size-21 g-mb-1">
+                                                <strong>Акция!!!</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                                                <div class="col- align-self-center g-pt-20">
+
+                                    <img class="img-fluid w-100 h-100 g-mb-10 g-mb-0--md" src="/plugins/fsFields/uploads/1/images/item-02.jpg" alt="MurrMeLand - Самый простой и лёгкий способ создать мультиссылку в инстаграм, мультилендинг, одностраничный сайт визитку, landing page (лендинг пейдж) бесплатно. Без программистов, хостинга, домена и прочего. 15 готовых экранов - всё необходимое и достаточное. Всё для приёма заявок: несколько форм захвата контактов, мессенджеры. Внешние ссылки на соцсети, сайты, скачивание файла. Контакты с активной картой. Великолепное отображение на всех дисплеях. " data-animation="fadeInUp" data-animation-delay="0" data-animation-duration="1000">
+
+                                </div>
+                            </div>
+                            <div class="col-md-5 pl-lg-5 g-pos-rel g-mb-30">
+                                <div class="d-flex align-self-center g-color-primary">
+                                    <p class="special-number g-mr-15 mb-0">20</p>
+                                    <p class="align-self-center">
+                                        <span class="special-number-line g-mr-15 g-mr-0--md">%</span>
+                                        <span class="special-number-line d-block mb-0">скидка</span>
+                                    </p>
+                                </div>
+                                <p class="lead g-mb-30">Специальные условия на личное сопровождение в туре.
+<br />
+<br />Плюс секретные опции - не для всех!
+<br />
+<br />Предложение с ограниченным количеством и сроком действия акции.
+<br /></p>
+
+
+                                <div class="d-flex mt-auto align-items-end align-self-end">
+                                    <a class="js-fancybox-media btn btn-xl g-color-white-opacity-0_9 text-uppercase u-btn-primary g-brd-white-opacity-0_1--hover btn-block rounded-3" href="https://murrmeland.com/">
+                                        <i class="et-icon-gift g-mr-10"></i>
+                                        Хочу!                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="g-flex-centered g-color-white g-mt-20">
+                        <div class="container u-bg-overlay__inner">
+                            <div class="row no-gutters text-center g-line-height-1">
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+<!-- End thx-page --><!-- Form -->
+<section id="form" class="u-shadow-v2">
+    <div class="container u-bg-overlay__inner px-0 g-mt-30">
+        <div class="row u-shadow-v23 u-angle-v1--top-right--bg-light g-bg-primary mx-0 g-rounded-15">
+            <div class="justify-content-center justify-content-center align-self-center w-100 g-mt-30">
+                <div class="u-heading-v7-3 text-center g-mb-15">
+                    <h2 class="u-heading-v7__title g-color-white g-font-size-50 g-font-goodvibes g-mt-15 g-mb-15">
+                        Воспользуйся моментом!                    </h2>
+                </div>
+                <div class="container g-width-945">
+                    <p class="h5 g-color-white text-center g-mb-0">
+                        Наш менеджер сделает тебе специальные условия                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 d-flex g-height-auto g-theme-color-gray-dark-v1 g-px-50 g-py-80 g-py-50--md g-py-50--lg">
+                <div class="align-self-center w-100">
+                    <form class="form-contact" data-event-success="Lead" data-event-data='{"form":"form"}' action="https://pinkpeony.murrmeland.com/EmailForm/Send/" >
+                        <input type="hidden" value="" name="redirect" />
+                        <div class="row g-mb-10 d-flex">
+                                                            <div class="flex-fill g-pr-20">
+                                    <label class="form-group g-pos-rel g-mx-15 w-100">
+                                        <input required class="form-control u-shadow-v26 g-bg-transparent g-border-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-25 g-pr-40 g-py-13" name="name" placeholder="Ваше Имя">
+                                        <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-16 h-100 g-flex-centered g-color-white">
+                                            <i class="icon-user"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                                                                        <div class="flex-fill g-pr-20">
+                                    <label class="form-group g-pos-rel g-mx-15 w-100">
+                                        <input required class="form-control u-shadow-v26 g-bg-transparent g-border-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-25 g-pr-40 g-py-13" type="email" name="email" placeholder="E-mail" data-mask="E">
+                                        <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-white">
+                                            <i class="icon-envelope"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                                                                        <div class="flex-fill g-pr-20">
+                                    <label class="form-group g-pos-rel g-mx-15 w-100">
+                                        <input required class="form-control g-pos-rel w-100 u-shadow-v26 g-bg-transparent g-border-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-55 g-pr-40 g-py-13 phone-number" type="tel" name="phone" placeholder="Телефон">
+                                        <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-white">
+                                            <i class="icon-phone"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                                    </div>
+                        <button class="js-fancybox-media btn btn-xl g-color-white-opacity-0_9 text-uppercase u-btn-primary g-parent g-btn-hover-reset g-pos-rel g-font-weight-700 g-font-size-11 g-brd-none g-rounded-10 g-pa-20 g-pl-75" type="submit" data-animate-in="flipInY" data-animate-out="flipOutY" data-speed="1000">
+                            <span class="g-pos-abs g-top-0 g-left-0 g-flex-centered g-width-60 g-width-70--parent-hover h-100 g-bg-primary-dark-v2 g-rounded-10 g-transition-0_2 g-transition--ease-in">
+                                <i class="icon-envelope g-font-size-26 g-color-white-opacity-0_6"></i>
+                            </span>
+                            Хочу!                        </button>
+                        <div class="confiden-wrap g-ml-10 g-mt-15 g-font-size-13">
+                            <i class="fas fa-check-square fa-lg g-color-white-opacity-0_7"></i>
+                            &nbsp;
+                            <a href="#modal-confiden" class="confiden g-color-white-opacity-0_7 g-color-white--hover u-link-v5" data-modal-target="#modal-confiden" data-modal-effect="blur">&nbsp;Даю согласие на обработку данных</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Form --><!-- FAQ -->
+<section id="faq" class="g-bg-secondary u-shadow-v2 g-py-30">
+    <div class="container">
+        <div class="text-center g-mb-30">
+            <div class="u-heading-v7-3 g-mb-30">
+                <h2 class="u-heading-v7__title g-font-size-60 g-font-goodvibes g-mb-20">
+                    Ответы на Ваши вопросы                </h2>
+                <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                    <i class="pe-7s-help2 g-font-size-18 g-color-primary">
+                    </i>
+                    <i class="pe-7s-help2 g-font-size-26 g-color-primary">
+                    </i>
+                    <i class="pe-7s-help2 g-font-size-36 g-color-primary">
+                    </i>
+                    <i class="pe-7s-help2 g-font-size-26 g-color-primary">
+                    </i>
+                    <i class="pe-7s-help2 g-font-size-18 g-color-primary">
+                    </i>
+                </div>
+                <p class="h5 g-theme-color-gray-light-v1">
+                                    </p>
+            </div>
+        </div>
+    </div>
+    <div class="container g-width-925 mx-auto g-pb-20">
+        <!-- Block -->
+        <div class="row ">
+            <div class="col-sm-12">
+                <div id="accordion-07" class="u-accordion u-accordion-color-primary u-shadow-v39 g-bg-white" role="tablist" aria-multiselectable="true">
+                                        <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                        <div id="accordion-07-heading-1" class="u-accordion__header g-pa-0" role="tab">
+                            <h5 class="h4 mb-0 g-pa-20a mb-0">
+                                <a class="d-flex g-color-main g-text-underline--none--hover" href="#accordion-07-body-1" data-toggle="collapse" data-parent="#accordion-07" aria-expanded="false" aria-controls="accordion-07-body-1">
+									<span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-font-size-26 g-color-primary text-center g-pa-20">
+                                        <i class="icon-plus"></i>
+                                        <i class="icon-minus"></i>
+									</span>
+                                    <span class="g-pa-20 g-font-weight-300">
+									Что такое маркетинг?									</span>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="accordion-07-body-1" class="collapse" role="tabpanel" aria-labelledby="accordion-07-heading-1" data-parent="#accordion-07">
+                            <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-font-size-16 g-py-30">
+                                Это совокупность процессов, направленных на создание, продвижение и предоставление продукта покупателям, а также управление взаимоотношениями с ними. В переводе с английского marketing – это рыночная деятельность. То есть маркетинг – это деятельность компании по удовлетворению рыночных потребностей. Главная задача – извлечение прибыли.                             </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                                        <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                        <div id="accordion-07-heading-2" class="u-accordion__header g-pa-0" role="tab">
+                            <h5 class="h4 mb-0 g-pa-20a mb-0">
+                                <a class="d-flex g-color-main g-text-underline--none--hover" href="#accordion-07-body-2" data-toggle="collapse" data-parent="#accordion-07" aria-expanded="false" aria-controls="accordion-07-body-2">
+									<span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-font-size-26 g-color-primary text-center g-pa-20">
+                                        <i class="icon-plus"></i>
+                                        <i class="icon-minus"></i>
+									</span>
+                                    <span class="g-pa-20 g-font-weight-300">
+									Что такое стратегия?									</span>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="accordion-07-body-2" class="collapse" role="tabpanel" aria-labelledby="accordion-07-heading-2" data-parent="#accordion-07">
+                            <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-font-size-16 g-py-30">
+                                Это определение основных долгосрочных целей и задач предприятия и утверждение курса действий, распределение ресурсов, необходимых для достижения этих целей © Chandler.
+<br />Стратегия представляет собой основополагающую картину настоящего, планируемое использование ресурсов, а также взаимодействие с окружающей средой, которое показывает, как организация будет достигать поставленные цели
+<br />© Hofer, Schendel.                             </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                                        <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                        <div id="accordion-07-heading-3" class="u-accordion__header g-pa-0" role="tab">
+                            <h5 class="h4 mb-0 g-pa-20a mb-0">
+                                <a class="d-flex g-color-main g-text-underline--none--hover" href="#accordion-07-body-3" data-toggle="collapse" data-parent="#accordion-07" aria-expanded="false" aria-controls="accordion-07-body-3">
+									<span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-font-size-26 g-color-primary text-center g-pa-20">
+                                        <i class="icon-plus"></i>
+                                        <i class="icon-minus"></i>
+									</span>
+                                    <span class="g-pa-20 g-font-weight-300">
+									Что такое дизайн?									</span>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="accordion-07-body-3" class="collapse" role="tabpanel" aria-labelledby="accordion-07-heading-3" data-parent="#accordion-07">
+                            <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-font-size-16 g-py-30">
+                                Это творческий метод, процесс и результат художественно-технического проектирования промышленных изделий, их комплексов и систем, ориентированного на достижение наиболее полного соответствия создаваемых объектов и среды в целом возможностям и потребностям человека, как утилитарным, так и эстетическим.                             </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                                    </div>
+            </div>
+        </div>
+        <!-- End Block -->
+    </div>
+
+</section>
+<!-- End FAQ --><div class="w-100 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-60vh g-flex-middle" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+    <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 120%; background-image: url(/plugins/fsFields/uploads/1/images/item-10.jpg);">
+    </div>
+    <div class="align-self-center w-100 h-100 g-py-0 g-bg-black-opacity-0_8">
+        <section id="contacts">
+            <!-- Footer -->
+            <footer>
+                <div class="container-fluid text-center px-0">
+                    <div class="row no-gutters g-min-height-80vh">
+                        <!-- Contact -->
+                        <div class="col-md-6 col-lg-4 d-flex g-bg-primary-opacity-0_1 g-pa-60">
+                            <div class="align-self-center w-100">
+                                <div class="text-center g-color-white g-mb-0">
+                                    <!-- description -->
+                                    <div class="u-heading-v3-1 g-mb-45">
+                                        <h2 class="h3 u-heading-v3__title g-font-goodvibes g-mt-15 g-font-size-60 g-color-primary g-brd-primary">
+                                            Время работы                                        </h2>
+                                    </div>
+                                    <!-- End description -->
+                                    <address class="g-font-size-default">
+                                        <!-- address -->
+                                        <div class="text-center g-mb-40">
+												<span class="d-block g-color-primary g-font-size-36 g-mb-5">
+													<i class="et-icon-map-pin">
+													</i>
+												</span>
+                                            <h4 class="h5 g-color-white g-font-weight-300 g-mb-3">
+                                                Москва, Любая, 8                                            </h4>
+                                        </div>
+                                        <!-- End address -->
+                                        <!-- work-time -->
+                                        <div class="text-center g-mb-40">
+												<span class="d-block g-color-primary g-font-size-36 g-mb-5">
+													<i class="et-icon-clock">
+													</i>
+												</span>
+                                            <h4 class="h5 g-color-white g-font-weight-300 g-mb-3">
+                                                с 05:00 до 23:00                                            </h4>
+                                        </div>
+                                        <!-- End work-time -->
+                                                                                <!-- phone -->
+                                        <div class="text-center g-mb-40">
+												<span class="d-block g-color-primary g-font-size-36 g-mb-5">
+													<i class="et-icon-phone">
+													</i>
+												</span>
+                                            <h4 class="h5 g-color-white g-font-weight-300 g-mb-3">
+                                                <a data-event-click="Contact" data-event-data='{"link":"phone"}' class="g-color-white" href="tel:+70001112233">
+                                                    +70001112233                                                </a>
+                                            </h4>
+                                            <p class="h6 g-color-white">
+                                                Звони смелее!                                            </p>
+                                        </div>
+                                        <!-- End phone -->
+                                                                            </address>
+                                    <!-- Messengers Contact -->
+                                                                            <!-- Messengers -->
+                                        <div class="g-mt-50">
+                                            <!-- Icon Blocks -->
+                                            <ul class="row no-gutters list-inline g-mb-0 u-shadow-v30">
+                                                                                                    <!-- Phone Blocks -->
+                                                    <li class="col list-inline-item g-mr-0">
+                                                        <a data-event-click="phone" href="tel:+70001112233" target="_blank" class="d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                                                            <i class="fas fa-phone"></i>
+                                                        </a>
+                                                    </li>
+                                                                                                    <li class="col list-inline-item g-mr-0">
+                                                        <a data-event-click="mssg" href="https://t.me/telegram" target="_blank" class="bg-fa-telegram-plane d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                                                            <i class="fab fa-telegram-plane"></i>
+                                                        </a>
+                                                    </li>
+                                                                                                    <li class="col list-inline-item g-mr-0">
+                                                        <a data-event-click="mssg" href="https://api.whatsapp.com/send?phone=+7 0001112233" target="_blank" class="bg-fa-whatsapp d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                                                            <i class="fab fa-whatsapp"></i>
+                                                        </a>
+                                                    </li>
+                                                                                                    <li class="col list-inline-item g-mr-0">
+                                                        <a data-event-click="mssg" href="viber://pa?chatURI=+70001112233" target="_blank" class="bg-fa-viber d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                                                            <i class="fab fa-viber"></i>
+                                                        </a>
+                                                    </li>
+                                                                                                    <li class="col list-inline-item g-mr-0">
+                                                        <a data-event-click="mssg" href="http://vk.me/1" target="_blank" class="bg-fa-vk d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                                                            <i class="fab fa-vk"></i>
+                                                        </a>
+                                                    </li>
+                                                                                                    <li class="col list-inline-item g-mr-0">
+                                                        <a data-event-click="mssg" href="http://m.me/01" target="_blank" class="bg-fa-facebook-messenger d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                                                            <i class="fab fa-facebook-messenger"></i>
+                                                        </a>
+                                                    </li>
+                                                                                            </ul>
+                                            <!-- End Icon Blocks -->
+                                        </div>
+                                        <!-- End messengers -->
+                                                                    </div>
+                            </div>
+                        </div>
+                        <!-- End Messengers Contact -->
+                        <!-- Map -->
+                        <div class="col-md-6 col-lg-4 g-min-height-400">
+                            <div class="yandex-map-container g-min-height-100vh g-height-auto g-height-100x g-flex-middle" data-zoom="14" id="yandex-map" data-center="">
+                            </div>
+                        </div>
+                        <!-- End Map -->
+                        <!-- Form -->
+                        <div class="col-md-6 col-lg-4 d-flex g-bg-primary-opacity-0_1 g-pa-60">
+                            <div class="align-self-center w-100">
+                                <div class="text-center g-color-white g-mb-30">
+                                    <!-- Article Title -->
+                                    <div class="u-heading-v3-1 g-mb-45">
+                                        <h2 class="h3 u-heading-v3__title g-font-goodvibes g-mt-15 g-font-size-60 g-color-primary g-brd-primary">
+                                            Путешествуй с нами!                                        </h2>
+                                    </div>
+                                    <!-- End Article Title -->
+                                </div>
+                                <form class="form-contact" data-event-success="Lead" data-event-data='{"form":"contacts"}' action="https://pinkpeony.murrmeland.com/EmailForm/Send/">
+                                    <div class="row g-mb-10 d-flex">
+                                                                                    <div class="flex-fill g-pr-20">
+                                                <label class="form-group g-pos-rel g-mx-15 w-100">
+                                                    <input required class="form-control u-shadow-v16 g-bg-transparent g-bg-transparent--focus g-brd-white-opacity-0_5 g-brd-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-25 g-pr-40 g-py-13"
+                                                           name="name" placeholder="Ваше Имя">
+                                                    <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-white">
+                                                        <i class="icon-user"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                                                                                                            <div class="flex-fill g-pr-20">
+                                                <label class="form-group g-pos-rel g-mx-15 w-100">
+                                                    <input required class="form-control u-shadow-v16 g-bg-transparent g-bg-transparent--focus g-brd-white-opacity-0_5 g-brd-primary--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-25 g-pr-40 g-py-13"
+                                                           type="email" name="email" placeholder="E-mail" data-mask="E">
+                                                    <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-white">
+                                                        <i class="icon-envelope"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                                                                                                            <div class="flex-fill g-pr-20">
+                                                <label class="form-group g-pos-rel g-mx-15 w-100">
+                                                    <input required class="form-control g-pos-rel w-100 u-shadow-v26 g-bg-transparent g-bg-transparent--focus g-brd-white-opacity-0_5 g-brd-white--focus g-placeholder-inherit g-color-white g-rounded-50 g-pl-55 g-pr-40 g-py-13 phone-number" type="tel" name="phone" placeholder="Телефон">
+                                                    <div class="g-pos-abs g-top-0 g-right-10 g-width-40 g-font-size-18 h-100 g-flex-centered g-color-white">
+                                                        <i class="icon-phone"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                                                            </div>
+                                    <div class="confiden-wrap g-ml-10 g-mb-15 g-font-size-13">
+                                        <i class="fas fa-check-square fa-lg g-color-white-opacity-0_7"></i>
+                                        &nbsp;
+                                        <a href="#modal-confiden" class="confiden g-color-white-opacity-0_7 g-color-white--hover u-link-v5" data-modal-target="#modal-confiden" data-modal-effect="blur">&nbsp;Даю согласие на обработку данных</a>
+                                    </div>
+                                    <button class="js-fancybox-media u-shadow-v26 btn btn-xl g-color-white-opacity-0_9 text-uppercase u-btn-primary g-parent g-btn-hover-reset g-pos-rel g-font-weight-700 g-font-size-11 g-brd-none g-rounded-3 g-pa-20 g-pl-75"
+                                            type="submit" data-animate-in="flipInY" data-animate-out="flipOutY" data-speed="1000">
+											<span class="g-pos-abs g-top-0 g-left-0 u-shadow-v26 g-flex-centered g-width-60 g-width-70--parent-hover h-100 g-bg-primary-dark-v2 g-rounded-3 g-transition-0_2 g-transition--ease-in">
+												<i class="icon-envelope g-font-size-26 g-color-white-opacity-0_6">
+												</i>
+											</span>
+                                        Уже хочу!                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Form -->
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer -->
+        </section>
+    </div>
+</div><!-- Social Links -->
+<section id="social">
+    <div class="row no-gutters text-center g-line-height-1">
+            </div>
+    <!-- End Social Links -->
+</section><span class="m-r-xs text-muted welcome-message">
+<strong>  Это блок для вставки HTML-кода!<br>
+  Например для особых виджетов и форм сбора контактов в мессенджеры.<br>
+  В принципе - zero-блок.
+</strong>
+</span><!-- Header -->
+<header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance g-z-index-9999" data-header-fix-moment="100">
+    <div class="u-header__section g-bg-white g-transition-0_3 g-py-15" data-header-fix-moment-exclude="g-py-15" data-header-fix-moment-classes="u-shadow-v27 g-py-8">
+        <nav class="navbar navbar-expand-lg g-py-0">
+            <div class="container g-pos-rel">
+                                    <a href="#" class="js-go-to navbar-brand u-header__logo" data-type="static">
+                        <img class="u-header__logo-img u-header__logo-img--main img-fluid g-height-50" src="/plugins/fsFields/uploads/51/images/9dc460277c030b7f9c6ea01ec409a786.png" alt="Demo Сайт">
+                    </a>
+                                <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar" data-mobile-scroll-hide="true">
+                    <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-font-weight-300 g-font-size-14 g-pt-20 g-pt-0--lg ml-auto">
+
+                                                    <li class="nav-item g-mr-15--lg g-mt-2 g-mb-7 g-mb-0--lg">
+                                <a href="#about" data-target="#about" class="nav-link p-0">
+                                    О нас                                     <span class="sr-only"></span>
+                                </a>
+                            </li>
+                                                    <li class="nav-item g-mr-15--lg g-mt-2 g-mb-7 g-mb-0--lg">
+                                <a href="#blog" data-target="#blog" class="nav-link p-0">
+                                    Полезные статьи                                    <span class="sr-only"></span>
+                                </a>
+                            </li>
+                                                    <li class="nav-item g-mr-15--lg g-mt-2 g-mb-7 g-mb-0--lg">
+                                <a href="#experience" data-target="#experience" class="nav-link p-0">
+                                    Почему мы лучшие                                    <span class="sr-only"></span>
+                                </a>
+                            </li>
+                                                    <li class="nav-item g-mr-15--lg g-mt-2 g-mb-7 g-mb-0--lg">
+                                <a href="#gallery" data-target="#gallery" class="nav-link p-0">
+                                    Фото                                    <span class="sr-only"></span>
+                                </a>
+                            </li>
+                                                    <li class="nav-item g-mr-15--lg g-mt-2 g-mb-7 g-mb-0--lg">
+                                <a href="#video" data-target="#video" class="nav-link p-0">
+                                    Видео                                    <span class="sr-only"></span>
+                                </a>
+                            </li>
+                                                    <li class="nav-item g-mr-15--lg g-mt-2 g-mb-7 g-mb-0--lg">
+                                <a href="#feedback" data-target="#feedback" class="nav-link p-0">
+                                    Отзывы                                    <span class="sr-only"></span>
+                                </a>
+                            </li>
+                                                                        <li class="nav-item g-mx-10--lg g-mb-7 g-font-weight-500 g-font-size-16 g-mb-0--lg">
+                            <a class="nav-link p-0 g-color-primary" data-event-data='{"link":"phone"}' data-event-click="Contact" href="tel:+70001112233">
+                                <i class="fas fa-phone-alt g-font-size-16 g-color-primary"></i>
+                                +70001112233                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                <!-- End Navigation -->
+                <!-- Responsive Toggle Button -->
+                <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-20 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse"
+                        data-target="#navBar">
+								<span class="hamburger hamburger--slider">
+									<span class="hamburger-box">
+										<span class="hamburger-inner">
+										</span>
+									</span>
+								</span>
+                </button>
+                <!-- End Responsive Toggle Button -->
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- End Header --><!-- Footer / Official / Copyright -->
+<section id="official">
+    <footer class="text-center text-md-left g-color-gray-dark-v3 g-py-20 g-px-15">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Copyright -->
+                <div class="col-md-3 text-center g-mb-0--md align-self-center d-flex justify-content-center g-py-5">
+                    <div class="d-lg-flex">
+                        <small class="d-block g-font-size-default g-mr-10 g-mb-0--md">
+                            <a class="g-color-primary-opacity-0_8 g-text-underline--none--hover u-link-v5" href="#!">
+                                ©&nbsp;                                 <span>2026						</span></a>
+                        </small>
+                    </div>
+                </div>
+                <!-- End Copyright -->
+                <!-- MurrMeLand Lable -->
+                <div class="col-md-4 text-center g-mb-0--md align-self-center d-flex justify-content-center g-py-5">
+                    <ul class="u-list-inline">
+                                                                                            </ul>
+                </div>
+                <!-- End MurrMeLand Lable -->
+
+
+                <!-- MurrMeLand Lable -->
+                <div class="col-md-2 text-center g-mb-0--md align-self-center d-flex justify-content-center g-py-5">
+                    <ul class="u-list-inline">
+
+                        <li class="list-inline-item">
+                            <a class="g-color-primary-opacity-0_8 g-text-underline--none--hover u-link-v5" href="/user/account/">Личный кабинет</a>
+                        </li>
+                        <li class="list-inline-item">
+						<span>
+							|
+						</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="g-color-primary-opacity-0_8 g-text-underline--none--hover u-link-v5" href="/new">Создать сайт</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End MurrMeLand Lable -->
+
+                <!-- Services Lable -->
+                <div class="col-md-3 text-center g-mb-0--md align-self-center d-flex justify-content-center g-py-5">
+                    <div class="d-lg-flex">
+                        <p class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">
+                            <a data-event-click="newuser" class="g-color-primary-opacity-0_8 g-text-underline--none--hover u-link-v5" href="#modal-murrmeland" data-modal-target="#modal-murrmeland" data-modal-effect="blur">Работает на платформе ©&nbsp;MurrMeLand</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- End Services Lable -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer / Official / Copyright -->
+</section>
+
+<!-- Success modal window -->
+<div id="modal-success" class="modals text-center g-max-width-600 g-bg-white g-overflow-y-auto g-pa-30" style="display: none;">
+    <button type="button" class="close sticky-top g-bg-white" onclick="Custombox.modal.close();">
+        <i class="hs-icon hs-icon-close">
+        </i>
+    </button>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center">
+		<span class="u-icon-v2 u-icon-size--xl g-brd-2 g-font-size-55 g-color-primary g-brd-primary--hover g-rounded-50x g-mb-20">
+			<i class="pe-7s-check">
+			</i>
+		</span>
+    </div>
+    <h2 class="g-mb-20 g-color-primary">
+        Спасибо за Ваш заказ!    </h2>
+    <h3 class="g-my-20">
+        Наш сотрудник свяжется с Вами в ближайшее время!    </h3>
+    <div class="text-center g-mt-20">
+        <button type="button" class="btn btn-primary" onclick="Custombox.modal.close();" data-dismiss="modal">
+            ОК        </button>
+    </div>
+</div>
+<!-- Success modal window -->
+<!-- MurrMeLand modal window -->
+<div id="modal-murrmeland" class="modals modal-lg text-center g-max-width-600 g-bg-black-opacity-0_9 g-overflow-y-auto g-pa-25" style="display: none;">
+    <button type="button" class="close sticky-top g-bg-black-opacity-0_9" onclick="Custombox.modal.close();">
+        <i class="hs-icon hs-icon-close">
+        </i>
+    </button>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center">
+		<span class="u-icon-v2 u-icon-size--xl g-brd-2 g-font-size-55 g-color-primary g-brd-primary--hover g-rounded-50x g-mb-5">
+			<i class="pe-7s-like">
+			</i>
+		</span>
+    </div>
+    <div class="u-heading-v7-2">
+        <h4 class="h3 display-4 u-heading-v7__title g-mb-10 g-font-size-40 g-color-white-opacity-0_9">
+            Сайт работает
+            <p class="g-color-white-opacity-0_7 g-font-size-23 g-mb-5">
+                на платформе
+            </p>
+            <p class="g-color-primary g-font-size-25 g-mb-5">
+                MurrMeLand
+            </p>
+        </h4>
+        <i class="fa fa-star g-color-primary g-font-size-70x">
+        </i>
+        <i class="fa fa-star g-font-size-95x g-color-primary">
+        </i>
+        <i class="fa fa-star g-color-primary">
+        </i>
+        <i class="fa fa-star g-font-size-95x g-color-primary">
+        </i>
+        <i class="fa fa-star g-font-size-70x g-color-primary">
+        </i>
+    </div>
+    <div class="g-mb-10">
+        <h3 class="g-mb-10 u-heading-v5-3 g-color-white-opacity-0_7">
+            Хотите такой же?
+        </h3>
+        <!-- CTA Button -->
+        <a href="http://murrmeland.com/new" target="_blank" class="btn btn-xl u-btn-primary u-btn-hover-v1-3 u-btn-content g-mx-15 g-font-weight-400 g-letter-spacing-0_5 text-uppercase g-brd-2 g-rounded-50 g-mb-10 g-px-16">
+            <i class="pe-7s-power pull-left g-font-size-42 g-ml-5"></i>
+            <span class="float-left text-right g-px-9">
+		Регистрируйтесь
+		<span class="d-block text-center g-font-size-11 g-ml-3">* сегодня это бесплатно</span>
+		</span>
+        </a>
+        <!-- End CTA Button -->
+        <p class="g-mb-10 u-heading-v5-3 u-heading-v5-color-gray-light-v2">
+            *действует ограниченное предложение
+        </p>
+    </div>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+</div>
+<!-- MurrMeLand modal window -->
+<!-- Сonfiden modal window -->
+<div id="modal-confiden" class="modals g-max-width-800 g-overflow-y-auto g-pa-20 g-bg-secondary-1" style="display: none;">
+    <button type="button" class="sticky-top g-bg-secondary-1 close" onclick="Custombox.modal.close();">
+        <i class="hs-icon hs-icon-close">
+        </i>
+    </button>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center">
+		<span class="u-icon-v2 u-icon-size--xl g-brd-2 g-font-size-55 g-color-primary g-brd-primary--hover g-rounded-50x g-mb-20">
+			<i class="pe-7s-door-lock">
+			</i>
+		</span>
+    </div>
+    <h2 class="g-mb-20 g-color-primary text-center">
+        Политика конфиденциальности
+    </h2>
+    <div class="g-my-20 text-left">
+            </div>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center g-py-20">
+        <button type="button" class="btn btn-primary" onclick="Custombox.modal.close();" data-dismiss="modal">
+            Закрыть
+        </button>
+    </div>
+</div>
+<!-- Сonfiden modal window -->
+<!-- Oferta modal window -->
+<div id="modal-oferta" class="modals g-max-width-800 g-overflow-y-auto g-pa-20 g-bg-secondary-1" style="display: none;">
+    <button type="button" class="sticky-top g-bg-secondary-1 close" onclick="Custombox.modal.close();">
+        <i class="hs-icon hs-icon-close">
+        </i>
+    </button>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center">
+		<span class="u-icon-v2 u-icon-size--xl g-brd-2 g-font-size-55 g-color-primary g-brd-primary--hover g-rounded-50x g-mb-20">
+			<i class="pe-7s-door-lock">
+			</i>
+		</span>
+    </div>
+    <h2 class="g-mb-20 g-color-primary text-center">
+        Договор-оферта
+    </h2>
+    <div class="g-my-20 text-left">
+            </div>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center g-py-20">
+        <button type="button" class="btn btn-primary" onclick="Custombox.modal.close();" data-dismiss="modal">
+            Закрыть
+        </button>
+    </div>
+</div>
+<!-- / Oferta modal window -->
+<!-- Official info modal window -->
+<div id="modal-official" class="modals g-max-width-800 g-overflow-y-auto g-pa-20 g-bg-secondary-1" style="display: none;">
+    <button type="button" class="sticky-top g-bg-secondary-1 close" onclick="Custombox.modal.close();">
+        <i class="hs-icon hs-icon-close">
+        </i>
+    </button>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center">
+		<span class="u-icon-v2 u-icon-size--xl g-brd-2 g-font-size-55 g-color-primary g-brd-primary--hover g-rounded-50x g-mb-20">
+			<i class="pe-7s-door-lock">
+			</i>
+		</span>
+    </div>
+    <h2 class="g-mb-20 g-color-primary text-center">
+        Юридическая информация
+    </h2>
+    <div class="g-my-20 text-left">
+            </div>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="text-center g-py-20">
+        <button type="button" class="btn btn-primary" onclick="Custombox.modal.close();" data-dismiss="modal">
+            Закрыть
+        </button>
+    </div>
+</div>
+<!-- / Official info modal window -->
+<!-- Messengers modal window -->
+<div id="modal-messengers" class="modals modal-lg g-rounded-15 text-center g-max-width-600 g-bg-black-opacity-0_12 g-overflow-y-auto" style="display: none;">
+    <button type="button" class="close sticky-top g-pa-30" onclick="Custombox.modal.close();">
+        <i class="hs-icon hs-icon-close"></i>
+    </button>
+    <div class="g-pa-10 g-rounded-10 g-bg-white-opacity-0_4">
+        <!-- Messengers -->
+<section id="messengers" class="u-bg-overlay u-shadow-v26  g-bg-img-hero g-bg-black-opacity-0_7--after g-py-50" style="background-image: url(/plugins/fsFields/uploads/1/images/messenger.jpg);">
+    <div class="container text-center u-bg-overlay__inner g-width-1025 g-pb-5">
+        <div class="u-heading-v7-3 g-mb-30">
+            <h2 class="u-heading-v7__title g-font-size-60 g-color-white-opacity-0_8 g-font-goodvibes g-mb-20">
+                Есть вопросы? Мы всегда на связи!            </h2>
+            <div class="u-heading-v7-divider g-brd-gray-light-v4">
+                <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-default g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-11 g-color-primary"></i>
+                <i class="fa fa-heart g-font-size-8 g-color-primary"></i>
+            </div>
+        </div>
+        <p class="h4 g-color-white">
+            Звони, пиши, радируй 24/7        </p>
+        <div class="g-mt-50">
+            <!-- Icon Blocks -->
+            <ul class="row no-gutters list-inline g-mb-30 u-shadow-v30">
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="https://t.me/telegram" target="_blank" class="bg-fa-telegram-plane d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="https://api.whatsapp.com/send?phone=+7 0001112233" target="_blank" class="bg-fa-whatsapp d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="viber://pa?chatURI=+70001112233" target="_blank" class="bg-fa-viber d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="http://vk.me/1" target="_blank" class="bg-fa-vk d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                                    <!-- Viber Block -->
+                    <li class="col list-inline-item g-mr-0">
+                        <a data-event-click="mssg" href="http://m.me/01" target="_blank" class="bg-fa-facebook-messenger d-block u-shadow-v26 g-bg-primary-opacity-0_9 g-color-white-opacity-0_8 g-bg-primary--hover g-color-white--hover g-font-size-20 text-center g-pa-15">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </a>
+                    </li>
+                            </ul>
+            <!-- End Icon Blocks -->
+        </div>
+    </div>
+</section>
+<!-- End Messengers -->    </div>
+</div>
+<!-- Messengers modal window --><a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{"bottom": 15,"right": 15}' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+    <i class="hs-icon hs-icon-arrow-top"></i>
+</a>
+</main>
+<script src="/assets/js/landings/appear.min.js"></script>
+<script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+<script src="/assets/vendor/popper.js/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap/offcanvas.js"></script>
+<script src="/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="/assets/vendor/custombox/custombox.min.js"></script>
+<script src="/assets/js/landings/hs.core.js"></script>
+<script src="/assets/js/landings/components/hs.header.js"></script>
+<script src="/assets/js/landings/components/hs.hamburgers.js"></script>
+<script src="/assets/js/landings/components/hs.smart-menu.js"></script>
+<script src="/assets/js/landings/components/hs.popup.js"></script>
+<script src="/assets/js/landings/components/hs.carousel.js"></script>
+<script src="/assets/js/landings/components/hs.modal-window.js"></script>
+<script src="/assets/js/landings/components/hs.go-to.js"></script>
+<script src="/assets/js/landings/components/hs.onscroll-animation.js"></script>
+<script src="/assets/js/jquery.mask.js" async></script>
+<script src="/assets/js/fsForm.js" async></script>
+<!-- JS Custom -->
+<script src="/assets/js/shared.js"></script>
+<script src="/assets/js/landings/custom.js"></script>
+<script src="/plugins/murrmeland/modules/localhost/?sid=40&uid=54&pid=60" async></script>
+<script>
+    $(document).ready(function () {
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox');
+        // initialization of Modal Window
+        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+        // initialization of scroll animation
+        $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+    });
+    $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+        $.HSCore.components.HSSmartMenu.init($('.js-smart-menu'));
+    });
+    $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+    });
+</script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<link rel="stylesheet" href="/assets/css/landings/pe-icon-7-stroke.css"/>
+<link rel="stylesheet" href="/assets/js/plugins/intl-tel-input/css/intlTelInput.min.css">
+<script src="/assets/js/plugins/intl-tel-input/js/intlTelInput.min.js"></script>
+<script type="text/javascript">
+        var idMap = 'yandex-map';
+    if (document.getElementById(idMap)) {
+        var ymapsMapCenter = [];
+        ymapsMapCenter.push({ p: [55.753595, 37.621031], t: "Привет! Мы всегда здесь! Приезжай, прилетай, приходи!" });        ymaps.ready(function init() {
+            var ymapsMap = new ymaps.Map(idMap, {
+                center: ymapsMapCenter.length > 0 ? ymapsMapCenter[0].p : null,
+                zoom: document.getElementById(idMap).getAttribute('data-zoom') || 14,
+                // behaviors: ['multiTouch']
+            });
+            for (var i = 0; i < ymapsMapCenter.length; ++i) {
+                ymapsMap.geoObjects.add(new ymaps.Placemark(ymapsMapCenter[i].p, {
+                    balloonContent: ymapsMapCenter[i].t
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#FF0033'
+                }));
+            }
+            if (ymapsMapCenter.length > 1) {
+                ymapsMap.setBounds(ymapsMap.geoObjects.getBounds());
+                ymapsMap.setZoom(ymapsMap.getZoom() - 1);
+            }
+            if (isMobile === true) {
+                ymapsMap.behaviors.disable('drag');
+            }
+        });
+    }
+</script>
+<div id="modal-ajax" class="modals text-center g-max-width-600 g-bg-white g-overflow-y-auto g-pa-30" style="display: none;">
+    <button type="button" class="close sticky-top g-bg-white" onclick="Modals.close()">
+        <i class="hs-icon hs-icon-close"></i>
+    </button>
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-15">
+    <div class="modal-ajax-content"></div>
+</div>
+</body></html>
